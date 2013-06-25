@@ -21,6 +21,8 @@ app.get('/tests', function(req, res){
     });
 });
 
+module.exports = app;
+
 //SSL
 var options = {
     key: fs.readFileSync('./ssl/privatekey.pem'),
