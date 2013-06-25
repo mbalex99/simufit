@@ -8,8 +8,12 @@
 var express = require('express');
 var https = require('https');
 var fs = require('fs');
+var partials = require('express-partials');
+
 
 var app = express();
+app.use(partials());
+app.set('view engine', 'ejs');
 
 app.get('/tests', function(req, res){
     res.send({
