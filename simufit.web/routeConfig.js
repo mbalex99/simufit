@@ -6,8 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var imageTypes = require('./controllers/imageTypes');
+var entry = require('./controllers/entry');
 
 module.exports = function(app){
-    app.get('/imageTypes', imageTypes.list);
+    app.get('/entries', entry.list);
 };
