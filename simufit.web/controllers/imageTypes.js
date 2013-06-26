@@ -7,11 +7,11 @@
  */
 var Connection = require('tedious').Connection;
 var appConfig = require('./../appConfig');
-
+var Request = require('tedious').Request;
 
 
 exports.list = function(req, res){
-     var connection = new Connection(appConfig.dbConnectionObject);
+    var connection = new Connection(appConfig.dbConnectionObject);
 
     connection.on('connect', function(err){
         //if no error, then we are good to go.
@@ -19,25 +19,12 @@ exports.list = function(req, res){
             console.log(err);
         }else
         {
-            console.log('no connection error');
-            executeStatement();
+            var request = new Request("SELECT * FROM ImageTypes", function(err, rowCount, rows){
+                console.log(rowCount);
+                res.send(rows);
+            })
+            connection.execSql(request);
         }
     });
-
-    function executeStatement(){
-        var Request = require('tedious').Request;
-
-        var request = new Request("SELECT * FROM ImageTypes", function(err, rowCount){
-            if(err){
-                console.log(err);
-            }
-        });
-
-        request.on('done', function(rowCount, more, rows) {
-            console.log(rows);
-        });
-
-        connection.execSql(request);
-    }
 
 };

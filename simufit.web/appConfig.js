@@ -7,13 +7,4 @@
  */
 
 
-exports.dbConnectionObject = {
-    "userName": "myseaurchin334@wmzo4lbpth",
-    "password": "JSeuph1990",
-    "server": "wmzo4lbpth.database.windows.net",
-    "options": {
-        "database": "dev-simufit",
-        "encrypt": true,
-        rowCollectionOnDone: true
-    }
-};
+exports.connectionString =
