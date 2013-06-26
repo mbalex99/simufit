@@ -9,17 +9,14 @@ var express = require('express');
 var https = require('https');
 var fs = require('fs');
 var partials = require('express-partials');
-
+var routeConfig = require('./routeConfig');
 
 var app = express();
 app.use(partials());
 app.set('view engine', 'ejs');
 
-app.get('/tests', function(req, res){
-    res.send({
-        test:'test'
-    });
-});
+//register routes
+routeConfig(app);
 
 module.exports = app;
 
