@@ -20,7 +20,7 @@
       <a href="simple-html5-document.html">home2</a>
     </nav>
     <header>
-      <h1>@title</h1>
+      <h1>@model.title</h1>
     </header>
     <article>
       <hgroup>

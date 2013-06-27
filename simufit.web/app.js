@@ -6,33 +6,31 @@
  * To change this template use File | Settings | File Templates.
  */
 var express = require('express');
+var path = require('path');
 var https = require('https');
 var fs = require('fs');
 var partials = require('express-partials');
 var routeConfig = require('./routeConfig');
 var passportConfig = require('./passportConfig');
 var passport = require('passport');
-var KallyRazor = require('kally-razor');
-
-
 
 var app = express();
 
-app.configur(function(){
-    app.use(partials());
-    app.use(express.cookieParser());
-    app.use(express.bodyParser());
-    app.use(express.session({ secret: 'keyboard cat' }));
-    app.use(passport.initialize());
-    app.use(passport.session());
-    app.use(app.router);
-    app.use(express.static(path.join(__dirname, 'public')));
+app.configure(function(){
+    app.set('port', process.env.PORT || 3000);
     app.set('views', path.join( __dirname, '/views') ); // critical to use path.join on windows
     app.set('view engine', 'vash');
+    app.use(express.favicon());
+    app.use(express.logger('dev'));
+    app.use(express.bodyParser());
+    app.use(express.methodOverride());
+    app.use(app.router);
+    app.use(express.static(path.join(__dirname, 'public')));
+
+    app.use(express.cookieParser());
+    app.use(passport.initialize());
+    app.use(passport.session());
 });
-
-
-
 
 
 passportConfig.register(passport);
@@ -44,9 +42,10 @@ routeConfig.registerApiRoutes(app);
 
 //SSL
 var options = {
-    key: fs.readFileSync('./ssl/privatekey.pem'),
-    cert: fs.readFileSync('./ssl/certificate.pem')
+    key: fs.readFileSync('./infrastructure/ssl/privatekey.pem'),
+    cert: fs.readFileSync('./infrastructure/ssl/certificate.pem')
 };
-var server = https.createServer(options, app);
-server.listen(3000);
+var server = https.createServer(options, app).listen(app.get('port'), function(){
+    console.log("Express server listening on port " + app.get('port'));
+});
 module.exports = app;

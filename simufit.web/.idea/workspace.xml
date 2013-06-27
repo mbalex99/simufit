@@ -2,86 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b56be73c-1143-42cd-b805-48276c606e69" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\controllers\entry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\.gitmodules" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\benchmark.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\ejs.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\ejs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\examples\client.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\examples\functions.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\examples\functions.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\examples\list.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\examples\list.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\lib\ejs.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\lib\filters.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\lib\utils.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\support\compile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\ejs.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\backslash.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\backslash.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\comments.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\comments.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\double-quote.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\double-quote.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\error.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\error.out" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\fail.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\include.css.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\include.css.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\include.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\include.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\includes\menu-item.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\includes\menu\item.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\menu.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\menu.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\messed.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\messed.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\newlines.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\newlines.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\no.newlines.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\no.newlines.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\para.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\pet.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\single-quote.ejs" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\single-quote.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\ejs\test\fixtures\user.ejs" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-facebook/node_modules/pkginfo/README.md" afterPath="$PROJECT_DIR$/node_modules/passport-facebook/node_modules/pkginfo/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/node_modules/pkginfo/README.md" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pkginfo/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-facebook/node_modules/passport-oauth/node_modules/oauth/Readme.md" afterPath="$PROJECT_DIR$/node_modules/passport-facebook/node_modules/passport-oauth/node_modules/oauth/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/hours.vash" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layout.vash" />
+      <change type="MOVED" beforePath="C:\GithubProjects\simufit\simufit.web\ssl\certificate.pem" afterPath="$PROJECT_DIR$/infrastructure/ssl/certificate.pem" />
+      <change type="MOVED" beforePath="C:\GithubProjects\simufit\simufit.web\ssl\certrequest.csr" afterPath="$PROJECT_DIR$/infrastructure/ssl/certrequest.csr" />
+      <change type="MOVED" beforePath="C:\GithubProjects\simufit\simufit.web\ssl\privatekey.pem" afterPath="$PROJECT_DIR$/infrastructure/ssl/privatekey.pem" />
+      <change type="MOVED" beforePath="C:\GithubProjects\simufit\simufit.web\views\index.bliss" afterPath="$PROJECT_DIR$/views/index.vash" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/bytes/component.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/bytes/component.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/node_modules/debug/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/buffer-crc32/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/buffer-crc32/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/bytes/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/bytes/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/cookie/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/connect/node_modules/cookie/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/cookie/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/cookie/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/methods/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/methods/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/range-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/range-parser/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/lodash/package.json" afterPath="$PROJECT_DIR$/node_modules/lodash/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongojs/node_modules/mongodb/node_modules/kerberos/package.json" afterPath="$PROJECT_DIR$/node_modules/mongojs/node_modules/mongodb/node_modules/kerberos/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-facebook/node_modules/passport-oauth/node_modules/oauth/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-facebook/node_modules/passport-oauth/node_modules/oauth/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-facebook/node_modules/pkginfo/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-facebook/node_modules/pkginfo/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport-facebook/node_modules/pkginfo/examples/package.json" afterPath="$PROJECT_DIR$/node_modules/passport-facebook/node_modules/pkginfo/examples/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/node_modules/pkginfo/package.json" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pkginfo/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/node_modules/pkginfo/examples/package.json" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pkginfo/examples/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passportConfig.js" afterPath="$PROJECT_DIR$/passportConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routeConfig.js" afterPath="$PROJECT_DIR$/routeConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/userService.js" afterPath="$PROJECT_DIR$/services/userService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewControllers/home.js" afterPath="$PROJECT_DIR$/viewControllers/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simufit.web.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/app.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372369910752" ignored="false" />
+    <file path="/app.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372370747728" ignored="false" />
     <file path="/web.config" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372135074036" ignored="false" />
     <file path="/routeConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372364207229" ignored="false" />
     <file path="/imageTypes.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372290111036" ignored="false" />
@@ -96,9 +29,10 @@
     <file path="/dbFactory.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372340176851" ignored="false" />
     <file path="/readme.md" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372363721320" ignored="false" />
     <file path="/index.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372363818229" ignored="false" />
-    <file path="/Dummy.txt" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372365532701" ignored="false" />
+    <file path="/Dummy.txt" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372371955089" ignored="false" />
     <file path="/index.bliss" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372367603550" ignored="false" />
     <file path="/home.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372367249520" ignored="false" />
+    <file path="/index.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372372043119" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,21 +64,28 @@
       <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/viewControllers/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+            <state line="18" column="31" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.vash" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.vash">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="17" selection-start="572" selection-end="572" vertical-scroll-proportion="-14.384615">
               <folding>
-                <element signature="e#0#162#0" expanded="false" />
+                <marker date="1372372046103" expanded="true" signature="200:216" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.bliss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.bliss">
+      <file leaf-file-name="layout.vash" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layout.vash">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="52" selection-start="693" selection-end="693" vertical-scroll-proportion="-5.8846154">
-              <folding>
-                <marker date="1372367605161" expanded="true" signature="200:216" placeholder="..." />
-              </folding>
+            <state line="8" column="16" selection-start="234" selection-end="234" vertical-scroll-proportion="-5.230769">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,7 +93,7 @@
       <file leaf-file-name="configuration.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configuration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="67" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+            <state line="10" column="37" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,7 +102,7 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="21" selection-start="447" selection-end="447" vertical-scroll-proportion="0.23800384">
+            <state line="45" column="44" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.65750915">
               <folding />
             </state>
           </provider>
@@ -185,8 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web.config" />
-        <option value="$PROJECT_DIR$/services/dbClient.js" />
         <option value="$PROJECT_DIR$/controllers/imageTypes.js" />
         <option value="$PROJECT_DIR$/appConfig.js" />
         <option value="$PROJECT_DIR$/authConfig.js" />
@@ -199,6 +138,9 @@
         <option value="$PROJECT_DIR$/routeConfig.js" />
         <option value="$PROJECT_DIR$/views/index.bliss" />
         <option value="$PROJECT_DIR$/viewControllers/home.js" />
+        <option value="$PROJECT_DIR$/views/layout.vash" />
+        <option value="$PROJECT_DIR$/views/hours.vash" />
+        <option value="$PROJECT_DIR$/views/index.vash" />
         <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
@@ -282,20 +224,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simufit.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simufit.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -303,16 +231,17 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.fileTypes" />
-    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GithubProjects\simufit\simufit.web\infrastructure" />
       <recent name="C:\simufit\simufit.web\certificates" />
     </key>
   </component>
@@ -330,7 +259,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -379,12 +308,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1444386" sideWeight="0.6091587" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18028466" sideWeight="0.6091587" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -472,18 +401,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="709" selection-end="709" vertical-scroll-proportion="0.33333334" />
@@ -526,6 +443,13 @@
         <state line="9" column="31" selection-start="223" selection-end="223" vertical-scroll-proportion="-5.8846154" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/viewControllers/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="31" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routeConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="17" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
@@ -533,34 +457,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.js">
+    <entry file="file://$PROJECT_DIR$/views/hours.vash">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="67" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+        <state line="16" column="2" selection-start="372" selection-end="372" vertical-scroll-proportion="0.52307695" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.vash">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="17" selection-start="572" selection-end="572" vertical-scroll-proportion="-14.384615">
+          <folding>
+            <marker date="1372372046103" expanded="true" signature="200:216" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.vash">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="16" selection-start="234" selection-end="234" vertical-scroll-proportion="-5.230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.bliss">
+    <entry file="file://$PROJECT_DIR$/configuration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="52" selection-start="693" selection-end="693" vertical-scroll-proportion="-5.8846154">
-          <folding>
-            <marker date="1372367605161" expanded="true" signature="200:216" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/viewControllers/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#162#0" expanded="false" />
-          </folding>
+        <state line="10" column="37" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="447" selection-end="447" vertical-scroll-proportion="0.23800384">
+        <state line="45" column="44" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.65750915">
           <folding />
         </state>
       </provider>
