@@ -7,7 +7,7 @@
  */
 
 var mongojs = require('mongojs');
-var appConfig = require('./../appConfig');
+var appConfig = require('./../configuration');
 var db = mongojs(appConfig.connectionString, ['entries']);
 
 

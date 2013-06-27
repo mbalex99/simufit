@@ -6,18 +6,36 @@
  * To change this template use File | Settings | File Templates.
  */
 
+var q = require('q');
+var db = ('./dbFactory').generate(['users']);
+
+
 module.exports = function(){
 
-    var findByFacebookId = function(facebookId){
-
+    var getUserByFacebookId = function(facebookId){
+        var deferred = q.defer();
+        db.users.findOne({facebookId: facebookId}, function(err, doc){
+            if(err){
+                deferred.reject(err);
+            }else{
+                deferred.resolve(doc);
+            }
+        });
+        return deferred.promise;
     };
 
-    var createUserByFacebookProfile = function(facebook){
+    var createUserByFacebookProfile = function(profile){
+        var deferred = q.defer();
 
+        getUserByFacebookId(profile.id).then(function(user){
+
+        })
+
+        return deferred.promise;
     };
 
     return{
-        findByFacebookId: findByFacebookId,
+        getUserByFacebookId: getUserByFacebookId,
         createUserByFacebookProfile: createUserByFacebookProfile
     };
 }
