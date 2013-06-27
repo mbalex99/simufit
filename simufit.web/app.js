@@ -16,7 +16,8 @@ app.use(partials());
 app.set('view engine', 'ejs');
 
 //register routes
-routeConfig(app);
+routeConfig.registerViewRoutes(app);
+routeConfig.registerApiRoutes(app);
 
 module.exports = app;
 
