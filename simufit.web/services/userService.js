@@ -7,7 +7,8 @@
  */
 
 var q = require('q');
-var db = ('./dbFactory').generate(['users']);
+var dbFactory = require('./dbFactory');
+var db = dbFactory.generate(['users']);
 
 
 module.exports = function(){
@@ -23,7 +24,6 @@ module.exports = function(){
         });
         return deferred.promise;
     };
-
     var createUserByFacebookProfile = function(profile){
         var deferred = q.defer();
 
@@ -33,7 +33,6 @@ module.exports = function(){
 
         return deferred.promise;
     };
-
     return{
         getUserByFacebookId: getUserByFacebookId,
         createUserByFacebookProfile: createUserByFacebookProfile

@@ -6,16 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 
-
-module.exports = function(){
-
-    var generate = function(collections){
+exports.generate = function(collections){
         var mongojs = require('mongojs');
         var configuration = require('./../configuration');
         var db = mongojs(configuration.connectionString, collections);
         return db;
-    }
-    return {
-        generate: generate
     };
-}
