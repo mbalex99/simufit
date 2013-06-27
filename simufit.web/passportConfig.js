@@ -15,7 +15,19 @@ exports.register = function(passport){
         clientSecret: configuration.facebookAppSecret,
         callbackURL: configuration.facebookRedirectUri
     }, function(accessToken, refreshToken, profile, done){
-        var isUserExists = userService.getUserByFacebookId(profile.id);
+
+        userService.getUserByFacebookId(profile.id)
+            .then(function(user){
+                if(user == null){
+                    return userService.createUserByFacebookProfile(profile);
+                }else
+                {
+                    done(null, user);
+                    return;
+                }
+            }).then(function(){
+
+            })
     }));
     passport.serializeUser(function(user, done){done(null, user.id)});
     passport.deserializeUser(function(id, done){});

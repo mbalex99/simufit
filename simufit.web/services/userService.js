@@ -7,13 +7,10 @@
  */
 
 var q = require('q');
-var dbFactory = require('./dbFactory');
-var db = dbFactory.generate(['users']);
+var db = require('./dbFactory').generate(['users']);
 
 
-module.exports = function(){
-
-    var getUserByFacebookId = function(facebookId){
+exports.getUserByFacebookId = function(facebookId){
         var deferred = q.defer();
         db.users.findOne({facebookId: facebookId}, function(err, doc){
             if(err){
@@ -24,17 +21,41 @@ module.exports = function(){
         });
         return deferred.promise;
     };
-    var createUserByFacebookProfile = function(profile){
+exports.createUserByFacebookProfile = function(passportProfile){
         var deferred = q.defer();
 
-        getUserByFacebookId(profile.id).then(function(user){
+        var profile = {
+            facebookId: passportProfile.id,
+            displayName: passportProfile.displayName,
+            emailAddress: passportProfile.emails[0].value
+        };
 
-        })
+        db.users.save(profile, function(err, doc){
+           if(err){
+               deferred.reject(err);
+           }else{
+               deferred.resolve(doc);
+           }
+        });
 
         return deferred.promise;
     };
-    return{
-        getUserByFacebookId: getUserByFacebookId,
-        createUserByFacebookProfile: createUserByFacebookProfile
-    };
-}
+exports.findOrCreateUserFromProfile = function(passportProfile){
+    var deferred = q.defer();
+
+    this.getUserByFacebookId(passportProfile.id)
+        .then(function(user){
+        if(user == null){
+            return this.createUserByFacebookProfile(passportProfile);
+        }else
+        {
+            deferred.resolve(user);
+        }
+        })
+        .then(function(){
+
+        });
+
+    return deferred.promise;
+
+};
