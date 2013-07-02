@@ -2530,6 +2530,7 @@
       <change type="MOVED" beforePath="C:\simufit\simufit.web\components\bootstrap\img\glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/common/theme/scripts/plugins/other/revolution-slider/documentation/assets/img/glyphicons-halflings-white.png" />
       <change type="MOVED" beforePath="C:\simufit\simufit.web\views\index.vash" afterPath="$PROJECT_DIR$/views/app/index.vash" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/footer.vash" afterPath="$PROJECT_DIR$/views/footer.vash" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viewControllers/home.js" afterPath="$PROJECT_DIR$/viewControllers/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.vash" afterPath="$PROJECT_DIR$/views/layout.vash" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sidebar.vash" afterPath="$PROJECT_DIR$/views/sidebar.vash" />
@@ -2558,8 +2559,9 @@
     <file path="/index.bliss" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372367603550" ignored="false" />
     <file path="/home.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372367249520" ignored="false" />
     <file path="/index.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372728705732" ignored="false" />
-    <file path="/layout.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372738457654" ignored="false" />
+    <file path="/layout.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372738824037" ignored="false" />
     <file path="/sidebar.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372738735307" ignored="false" />
+    <file path="/footer.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372738776825" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2597,19 +2599,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.vash" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sidebar.vash" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/sidebar.vash">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="67" selection-start="420" selection-end="420" vertical-scroll-proportion="0.4455645">
+            <state line="16" column="26" selection-start="488" selection-end="488" vertical-scroll-proportion="-10.461538">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.vash" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="layout.vash" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layout.vash">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="12" selection-start="2300" selection-end="2300" vertical-scroll-proportion="-1.6315789">
+            <state line="66" column="0" selection-start="2790" selection-end="2790" vertical-scroll-proportion="0.84753364">
               <folding />
             </state>
           </provider>
@@ -2618,7 +2620,7 @@
       <file leaf-file-name="footer.vash" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/footer.vash">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="505" selection-end="505" vertical-scroll-proportion="-4.576923">
+            <state line="3" column="107" selection-start="176" selection-end="176" vertical-scroll-proportion="-1.9615384">
               <folding />
             </state>
           </provider>
@@ -2654,10 +2656,10 @@
         <option value="$PROJECT_DIR$/views/app/index.vash" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/common/theme/css/style-flat.css" />
-        <option value="$PROJECT_DIR$/views/footer.vash" />
         <option value="$PROJECT_DIR$/views/topnav.vash" />
-        <option value="$PROJECT_DIR$/views/layout.vash" />
         <option value="$PROJECT_DIR$/views/sidebar.vash" />
+        <option value="$PROJECT_DIR$/views/footer.vash" />
+        <option value="$PROJECT_DIR$/views/layout.vash" />
       </list>
     </option>
   </component>
@@ -3003,13 +3005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/footer.vash">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="505" selection-end="505" vertical-scroll-proportion="-4.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/topnav.vash">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="23" selection-start="706" selection-end="706" vertical-scroll-proportion="-12.423077">
@@ -3017,16 +3012,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.vash">
+    <entry file="file://$PROJECT_DIR$/views/sidebar.vash">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="12" selection-start="2300" selection-end="2300" vertical-scroll-proportion="-1.6315789">
+        <state line="16" column="26" selection-start="488" selection-end="488" vertical-scroll-proportion="-10.461538">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/sidebar.vash">
+    <entry file="file://$PROJECT_DIR$/views/footer.vash">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="67" selection-start="420" selection-end="420" vertical-scroll-proportion="0.4455645">
+        <state line="3" column="107" selection-start="176" selection-end="176" vertical-scroll-proportion="-1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.vash">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2790" selection-end="2790" vertical-scroll-proportion="0.84753364">
           <folding />
         </state>
       </provider>

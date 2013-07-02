@@ -38,37 +38,18 @@
     <script src="theme/scripts/plugins/system/less.min.js"></script>
 </head>
 <body class="">
-
-<!-- Main Container Fluid -->
 <div class="container-fluid fluid menu-left">
-
-    <!-- Sidebar menu & content wrapper -->
     <div id="wrapper">
-
         @html.include('sidebar')
-
-        <!-- Content -->
         <div id="content">
-
             @html.include('topnav')
-
-            <h3>Blank page</h3>
-            <p>This is a light-weight blank page, with minimum to none plugins loaded, a simpler menu example and perfect to get you started, as you build up your next cool web app. You can <a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=quick&amp;sidebar_style=full" class="glyphicons single link"><i></i>return to the fully featured version</a> anytime.</p>
-
-
+            @html.block('content')
         </div>
-        <!-- // Content END -->
-
     </div>
     <div class="clearfix"></div>
-    <!-- // Sidebar menu & content wrapper END -->
-
     @html.include('footer')
 
 </div>
-<!-- // Main Container Fluid END -->
-
-
 <!-- JQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
@@ -83,8 +64,6 @@
 
 <!-- Common Demo Script -->
 <script src="theme/scripts/demo/common.js?1372280982"></script>
-
-
 
 </body>
 </html>
