@@ -11,54 +11,9 @@
     <!-- // Not Blank Page END -->
 
     <ul class="topnav pull-left">
-        <li><a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=full&amp;sidebar_style=full" class="glyphicons dashboard"><i></i> Dashboard</a></li>
+        <li><a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=quick&amp;sidebar_style=full" class="glyphicons dashboard"><i></i> Dashboard</a></li>
     </ul>
 
-    <!-- Top Menu Right -->
-    <ul class="topnav pull-right hidden-phone hidden-tablet hidden-desktop-1">
-
-
-        <!-- Language menu -->
-        <li class="hidden-tablet hidden-phone hidden-desktop-1 dropdown dd-1 dd-flags" id="lang_nav">
-            <a href="#" data-toggle="dropdown"><img src="../../../../../common/theme/images/lang/en.png" alt="en" /></a>
-            <ul class="dropdown-menu pull-left">
-                <li class="active"><a href="?module=admin&amp;page=blank&amp;url_rewrite=&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;sidebar_style=full&amp;top_style=full&amp;lang=en" title="English"><img src="../../../../../common/theme/images/lang/en.png" alt="English"> English</a></li>
-                <li><a href="?module=admin&amp;page=blank&amp;url_rewrite=&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;sidebar_style=full&amp;top_style=full&amp;lang=ro" title="Romanian"><img src="../../../../../common/theme/images/lang/ro.png" alt="Romanian"> Romanian</a></li>
-                <li><a href="?module=admin&amp;page=blank&amp;url_rewrite=&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;sidebar_style=full&amp;top_style=full&amp;lang=it" title="Italian"><img src="../../../../../common/theme/images/lang/it.png" alt="Italian"> Italian</a></li>
-                <li><a href="?module=admin&amp;page=blank&amp;url_rewrite=&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;sidebar_style=full&amp;top_style=full&amp;lang=fr" title="French"><img src="../../../../../common/theme/images/lang/fr.png" alt="French"> French</a></li>
-                <li><a href="?module=admin&amp;page=blank&amp;url_rewrite=&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;sidebar_style=full&amp;top_style=full&amp;lang=pl" title="Polish"><img src="../../../../../common/theme/images/lang/pl.png" alt="Polish"> Polish</a></li>
-            </ul>
-        </li>
-        <!-- // Language menu END -->
-
-        <!-- Profile / Logout menu -->
-        <li class="account dropdown dd-1">
-            <a data-toggle="dropdown" href="my_account_advanced.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=full&amp;sidebar_style=full" class="glyphicons logout lock"><span class="hidden-tablet hidden-phone hidden-desktop-1">mosaicpro</span><i></i></a>
-            <ul class="dropdown-menu pull-right">
-                <li><a href="my_account_advanced.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=full&amp;sidebar_style=full" class="glyphicons cogwheel">Settings<i></i></a></li>
-                <li><a href="my_account_advanced.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=full&amp;sidebar_style=full" class="glyphicons camera">My Photos<i></i></a></li>
-                <li class="profile">
-							<span>
-								<span class="heading">Profile <a href="my_account_advanced.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=full&amp;sidebar_style=full" class="pull-right">edit</a></span>
-								<span class="img"></span>
-								<span class="details">
-									<a href="my_account_advanced.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=full&amp;sidebar_style=full">Mosaic Pro</a>
-									contact@mosaicpro.biz
-								</span>
-								<span class="clearfix"></span>
-							</span>
-                </li>
-                <li>
-							<span>
-								<a class="btn btn-default btn-mini pull-right" href="login.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=full&amp;sidebar_style=full">Sign Out</a>
-							</span>
-                </li>
-            </ul>
-        </li>
-        <!-- // Profile / Logout menu END -->
-
-    </ul>
-    <!-- // Top Menu Right END -->
     <div class="clearfix"></div>
 
 </div>
