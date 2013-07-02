@@ -2,14 +2,14 @@
  * Created with JetBrains WebStorm.
  * User: Maximilian
  * Date: 7/2/13
- * Time: 12:29 AM
+ * Time: 1:44 AM
  * To change this template use File | Settings | File Templates.
  */
-var BundleUp = require('bundle-up');
 
+var piler = require('piler');
 
-exports.registerBundles = function(app){
-    BundleUp(app, __dirname + "/assets", {
+var webAppJs = piler.createJSManager();
 
-    });
+exports.registerBundles = function(){
+    webApp
 }

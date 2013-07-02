@@ -26,6 +26,7 @@ app.configure(function(){
     app.use(express.methodOverride());
     app.use(app.router);
     app.use(express.static(__dirname + '/common'));
+    app.use(express.static(__dirname + '/webApp'));
 
     app.use(express.cookieParser());
     app.use(passport.initialize());
