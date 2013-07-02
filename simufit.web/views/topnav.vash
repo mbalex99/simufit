@@ -1,20 +1,9 @@
-<!-- Top navbar -->
 <div class="navbar main hidden-print">
-
-    <!-- Menu Toggle Button -->
     <button type="button" class="btn btn-navbar">
         <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
     </button>
-    <!-- // Menu Toggle Button END -->
-
-    <!-- Not Blank page -->
-    <!-- // Not Blank Page END -->
-
     <ul class="topnav pull-left">
-        <li><a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=quick&amp;sidebar_style=full" class="glyphicons dashboard"><i></i> Dashboard</a></li>
+        <li><a href="" class="glyphicons dashboard"><i></i> Dashboard</a></li>
     </ul>
-
     <div class="clearfix"></div>
-
 </div>
-<!-- Top navbar END -->

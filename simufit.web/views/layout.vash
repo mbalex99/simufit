@@ -24,12 +24,6 @@
     <link rel="stylesheet" href="theme/fonts/font-awesome/css/font-awesome.min.css">
     <!--[if IE 7]><link rel="stylesheet" href="theme/fonts/font-awesome/css/font-awesome-ie7.min.css"><![endif]-->
 
-    <!-- Uniform Pretty Checkboxes -->
-    <link href="theme/scripts/plugins/forms/pixelmatrix-uniform/css/uniform.default.css" rel="stylesheet" />
-
-    <!-- PrettyPhoto -->
-    <link href="theme/scripts/plugins/gallery/prettyphoto/css/prettyPhoto.css" rel="stylesheet" />
-
     <!-- Main Theme Stylesheet :: CSS -->
     <link href="theme/css/style-flat.css?1372280982" rel="stylesheet" type="text/css" />
 

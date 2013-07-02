@@ -5,8 +5,8 @@
  * Time: 12:31 PM
  * To change this template use File | Settings | File Templates.
  */
-var home = require('./viewControllers/home');
-var entry = require('./apiControllers/entry');
+var home = require('./controllers/home');
+var entry = require('./controllers/entry');
 var passport = require('passport');
 
 exports.registerViewRoutes = function(app){
