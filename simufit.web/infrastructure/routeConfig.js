@@ -12,7 +12,9 @@ var passport = require('passport');
 exports.registerViewRoutes = function(app){
     app.get('/', home.index);
     app.get('/auth/facebook', passport.authenticate('facebook'));
-    app.get('/auth/facebook/callback', passport.authenticate('facebook', { successRedirect: '/', failureRedirect: '/login' }));
+    app.get('/auth/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/login' }), function(req, res){
+        res.redirect('/');
+    });
 };
 
 exports.registerApiRoutes = function(app){

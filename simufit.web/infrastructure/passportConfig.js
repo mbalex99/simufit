@@ -10,6 +10,15 @@ var configuration = require('./../configuration');
 var userService = require('./../services/userService');
 
 exports.register = function(passport){
+
+    passport.serializeUser(function(user, done) {
+        done(null, user);
+    });
+
+    passport.deserializeUser(function(obj, done) {
+        done(null, obj);
+    });
+
     passport.use(new FacebookStrategy({
         clientID: configuration.facebookAppId,
         clientSecret: configuration.facebookAppSecret,
@@ -23,12 +32,7 @@ exports.register = function(passport){
                 }else
                 {
                     done(null, user);
-                    return;
                 }
-            }).then(function(){
-
             })
     }));
-    passport.serializeUser(function(user, done){done(null, user.id)});
-    passport.deserializeUser(function(id, done){});
 }
