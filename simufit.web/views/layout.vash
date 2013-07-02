@@ -1,15 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7 fluid top-quick sidebar sidebar-full"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8 fluid top-quick sticky-top sidebar sidebar-full"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9 fluid top-quick sticky-top sidebar sidebar-full"> <![endif]-->
+<!--[if gt IE 8]> <html class="ie gt-ie8 fluid top-quick sticky-top sidebar sidebar-full"> <![endif]-->
+<!--[if !IE]><!--><html class="fluid top-quick sticky-top sidebar sidebar-full"><!-- <![endif]-->
 <head>
-    <meta charset="utf-8">
-    <title>@model.title</title>
-    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" charset="utf-8">
-</head>
-<body>
-@html.block('content')
+    <title>Quick Admin Template (v1.3.3)</title>
 
-<footer>
-    @html.block('footer')
-</footer>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <!-- Glyphicons Font Icons -->
+    <link href="theme/fonts/glyphicons/css/glyphicons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="theme/fonts/font-awesome/css/font-awesome.min.css">
+    <!--[if IE 7]><link rel="stylesheet" href="theme/fonts/font-awesome/css/font-awesome-ie7.min.css"><![endif]-->
+
+    <!-- Uniform Pretty Checkboxes -->
+    <link href="theme/scripts/plugins/forms/pixelmatrix-uniform/css/uniform.default.css" rel="stylesheet" />
+
+    <!-- PrettyPhoto -->
+    <link href="theme/scripts/plugins/gallery/prettyphoto/css/prettyPhoto.css" rel="stylesheet" />
+
+    <!-- Main Theme Stylesheet :: CSS -->
+    <link href="theme/css/style-flat.css?1372280982" rel="stylesheet" type="text/css" />
+
+
+    <!-- LESS.js Library -->
+    <script src="theme/scripts/plugins/system/less.min.js"></script>
+</head>
+<body class="">
+
+<!-- Main Container Fluid -->
+<div class="container-fluid fluid menu-left">
+
+    <!-- Sidebar menu & content wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar Menu -->
+        <div id="menu" class="hidden-phone hidden-print">
+
+            <!-- Brand -->
+            <a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=quick&amp;sidebar_style=full" class="appbrand">Quick Admin</a>
+
+            <!-- Scrollable menu wrapper with Maximum height -->
+            <div class="slim-scroll" data-scroll-height="800px">
+
+                <!-- Sidebar Profile -->
+			<span class="profile center">
+				<a href="my_account_advanced.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=quick&amp;sidebar_style=full"><img data-src="holder.js/36x36/white" alt="Avatar" /></a>
+			</span>
+                <!-- // Sidebar Profile END -->
+
+                <!-- Regular Size Menu -->
+                <ul>
+
+
+                    <!-- Blank page template menu example -->
+                    <!-- Menu Regular Item (add class active to LI for an active menu item) -->
+                    <li class="active"><a class="glyphicons right_arrow" href=""><i></i>Menu item</a></li>
+                    <li><a class="glyphicons right_arrow" href=""><i></i>Menu item</a></li>
+                    <li><a class="glyphicons right_arrow" href=""><i></i>Menu item</a></li>
+                    <li><a class="glyphicons right_arrow" href=""><i></i>Menu item</a></li>
+                    <li><a class="glyphicons right_arrow" href=""><i></i>Menu item</a></li>
+                    <!-- // Blank page template menu example END -->
+
+                    <!-- Not blank page -->
+                    <!-- // Not blank page END -->
+
+                </ul>
+                <div class="clearfix"></div>
+                <!-- // Regular Size Menu END -->
+
+                <div class="alert alert-primary">
+                    <a class="close" data-dismiss="alert">&times;</a>
+                    <p>Integer quis tempor mi. Donec venenatis dui in neque fringilla at iaculis libero ullamcorper. In velit sem, sodales id hendrerit ac, fringilla et est.</p>
+                </div>
+
+            </div>
+            <!-- // Scrollable Menu wrapper with Maximum Height END -->
+
+        </div>
+        <!-- // Sidebar Menu END -->
+
+        <!-- Content -->
+        <div id="content">
+
+            <!-- Top navbar -->
+            <div class="navbar main hidden-print">
+
+                <!-- Menu Toggle Button -->
+                <button type="button" class="btn btn-navbar">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+                <!-- // Menu Toggle Button END -->
+
+                <!-- Not Blank page -->
+                <!-- // Not Blank Page END -->
+
+                <ul class="topnav pull-left">
+                    <li><a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=quick&amp;sidebar_style=full" class="glyphicons dashboard"><i></i> Dashboard</a></li>
+                </ul>
+
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- Top navbar END -->
+
+            <h3>Blank page</h3>
+            <p>This is a light-weight blank page, with minimum to none plugins loaded, a simpler menu example and perfect to get you started, as you build up your next cool web app. You can <a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-flat&amp;sidebar-sticky=false&amp;top_style=quick&amp;sidebar_style=full" class="glyphicons single link"><i></i>return to the fully featured version</a> anytime.</p>
+
+
+        </div>
+        <!-- // Content END -->
+
+    </div>
+    <div class="clearfix"></div>
+    <!-- // Sidebar menu & content wrapper END -->
+
+    <div id="footer" class="hidden-print">
+
+        <!--  Copyright Line -->
+        <div class="copy">&copy; 2012 - 2013 - <a href="http://www.mosaicpro.biz">MosaicPro</a> - All Rights Reserved. <a href="http://themeforest.net/item/quick-admin-template/4940725?ref=mosaicpro" target="_blank">Purchase Quick Admin on ThemeForest</a> - Current version: v1.3.3 / <a target="_blank" href="http://demo.mosaicpro.biz/quickadmin/CHANGELOG">changelog</a></div>
+        <!--  End Copyright Line -->
+
+    </div>
+    <!-- // Footer END -->
+
+</div>
+<!-- // Main Container Fluid END -->
+
+
+<!-- JQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<!-- Modernizr -->
+<script src="theme/scripts/plugins/system/modernizr.js"></script>
+
+<!-- Bootstrap -->
+<script src=" bootstrap/js/bootstrap.min.js"></script>
+
+<!-- SlimScroll Plugin -->
+<script src="theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js"></script>
+
+<!-- Common Demo Script -->
+<script src="theme/scripts/demo/common.js?1372280982"></script>
+
+
+
 </body>
 </html>
