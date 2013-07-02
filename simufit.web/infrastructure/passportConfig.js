@@ -6,8 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 var FacebookStrategy = require('passport-facebook').Strategy;
-var configuration = require('./configuration');
-var userService = require('./services/userService');
+var configuration = require('./../configuration');
+var userService = require('./../services/userService');
 
 exports.register = function(passport){
     passport.use(new FacebookStrategy({

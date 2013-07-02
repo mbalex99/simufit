@@ -10,8 +10,8 @@ var path = require('path');
 var https = require('https');
 var fs = require('fs');
 var partials = require('express-partials');
-var routeConfig = require('./routeConfig');
-var passportConfig = require('./passportConfig');
+var routeConfig = require('./infrastructure/routeConfig');
+var passportConfig = require('./infrastructure/passportConfig');
 var passport = require('passport');
 
 var app = express();
