@@ -46,7 +46,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/imgcat" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/imgcat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/index.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/index.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.vash" afterPath="$PROJECT_DIR$/views/index.vash" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/tmp/instrument.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/tmp/instrument.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/tmp/instrument2.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/tmp/instrument2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue11.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue11.js" />
@@ -79,10 +78,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/nopt" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/nopt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/npm" afterPath="$PROJECT_DIR$/node_modules/.bin/npm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/opener" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/opener" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/package.json" afterPath="$PROJECT_DIR$/node_modules/vash/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/package.json" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/lib/parse-js.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/lib/parse-js.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/lib/process.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/lib/process.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/rimraf" />
@@ -120,7 +115,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/which" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/which" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/with.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/with.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/with.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/with.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simufit.web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -424,7 +418,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -433,7 +427,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3984375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46763393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46763393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
