@@ -52,8 +52,8 @@ exports.findOrCreateUserFromProfile = function(passportProfile){
             deferred.resolve(user);
         }
         })
-        .then(function(){
-
+        .then(function(user){
+            deferred.resolve(user);
         });
 
     return deferred.promise;
