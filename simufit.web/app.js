@@ -8,36 +8,49 @@
 var express = require('express');
 var path = require('path');
 var https = require('https');
+var flash = require('connect-flash');
 var fs = require('fs');
-var partials = require('express-partials');
 var routeConfig = require('./infrastructure/routeConfig');
 var passportConfig = require('./infrastructure/passportConfig');
 var passport = require('passport');
+var BundleUp = require('bundle-up');
 
 var app = express();
 
+BundleUp(app, __dirname + '/infrastructure/assets', {
+    staticRoot: __dirname + '/webApp/',
+    staticUrlRoot:'/',
+    bundle:true,
+    minifyCss: true,
+    minifyJs: true
+});
+
+
 app.configure(function(){
-    app.set('port', process.env.PORT || 3000);
+    app.set('port', 3000);
     app.set('views', path.join( __dirname, '/views') ); // critical to use path.join on windows
     app.set('view engine', 'vash');
     app.use(express.favicon());
     app.use(express.logger('dev'));
-    app.use(express.bodyParser());
-    app.use(express.methodOverride());
-    app.use(app.router);
-    app.use(express.static(__dirname + '/common'));
-    app.use(express.static(__dirname + '/webApp'));
-
     app.use(express.cookieParser());
+    app.use(express.bodyParser());
+    app.use(express.session({ secret: 'keyboard cat' }));
     app.use(passport.initialize());
     app.use(passport.session());
+    app.use(express.methodOverride());
+    app.use(flash());
+    app.use(app.router);
+
+    app.use(express.static(__dirname + '/common'));
+    app.use(express.static(__dirname + '/webApp'));
 });
 
 
-passportConfig.register(passport);
+
 
 //register routes
-routeConfig.registerViewRoutes(app);
+passportConfig.register(passport);
+routeConfig.registerViewRoutes(app, passport);
 routeConfig.registerApiRoutes(app);
 
 

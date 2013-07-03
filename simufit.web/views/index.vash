@@ -1,0 +1,3 @@
+@html.extend('layout', function(model){
+           <p>sdf</p>
+});

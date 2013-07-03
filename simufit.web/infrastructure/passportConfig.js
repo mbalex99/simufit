@@ -23,12 +23,22 @@ exports.register = function(passport){
                 }else
                 {
                     done(null, user);
-                    return;
                 }
-            }).then(function(){
-
+            }).then(function(user){
+                done(null, user);
             })
     }));
-    passport.serializeUser(function(user, done){done(null, user.id)});
-    passport.deserializeUser(function(id, done){});
+    passport.serializeUser(function(user, done){
+        done(null, user.facebookId);
+    });
+
+    passport.deserializeUser(function(id, done){
+       userService.getUserByFacebookId(id).then(function(user){
+          if(user){
+              done(null, user);
+          }else{
+              done('deserializeUserError');
+          }
+       });
+    });
 }
