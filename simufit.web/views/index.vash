@@ -1,3 +1,0 @@
-@html.extend('./layout.vash', function(model){
-        <p>df</p>
-        })

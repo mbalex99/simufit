@@ -17,7 +17,24 @@ var BundleUp = require('bundle-up');
 
 var app = express();
 
-BundleUp(app, __dirname + '/infrastructure/assets', {
+app.set('port', 3000);
+app.set('views', path.join( __dirname, '/views') ); // critical to use path.join on windows
+app.set('view engine', 'jade');
+app.use(express.favicon());
+app.use(express.logger('dev'));
+app.use(express.cookieParser());
+app.use(express.bodyParser());
+app.use(express.session({ secret: 'keyboard cat' }));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(express.methodOverride());
+app.use(flash());
+app.use(app.router);
+
+app.use(express.static(__dirname + '/common/'));
+app.use(express.static(__dirname + '/webApp/'));
+
+BundleUp(app, __dirname + '/assets', {
     staticRoot: __dirname + '/webApp/',
     staticUrlRoot:'/',
     bundle:true,
@@ -25,34 +42,10 @@ BundleUp(app, __dirname + '/infrastructure/assets', {
     minifyJs: true
 });
 
-
-app.configure(function(){
-    app.set('port', 3000);
-    app.set('views', path.join( __dirname, '/views') ); // critical to use path.join on windows
-    app.set('view engine', 'vash');
-    app.use(express.favicon());
-    app.use(express.logger('dev'));
-    app.use(express.cookieParser());
-    app.use(express.bodyParser());
-    app.use(express.session({ secret: 'keyboard cat' }));
-    app.use(passport.initialize());
-    app.use(passport.session());
-    app.use(express.methodOverride());
-    app.use(flash());
-    app.use(app.router);
-
-    app.use(express.static(__dirname + '/common'));
-    app.use(express.static(__dirname + '/webApp'));
-});
-
-
-
-
 //register routes
 passportConfig.register(passport);
 routeConfig.registerViewRoutes(app, passport);
 routeConfig.registerApiRoutes(app);
-
 
 //SSL
 var options = {
