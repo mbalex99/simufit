@@ -2,31 +2,124 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b56be73c-1143-42cd-b805-48276c606e69" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\simufit\simufit.web\controllers\entry.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\simufit\simufit.web\infrastructure\bundleConfig.js" afterPath="$PROJECT_DIR$/infrastructure/assets.js" />
-      <change type="MOVED" beforePath="C:\simufit\simufit.web\views\app\index.vash" afterPath="$PROJECT_DIR$/views/index.vash" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/vash/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/.npmignore" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/.npmignore" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/AUTHORS" afterPath="$PROJECT_DIR$/node_modules/vash/AUTHORS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/node_modules/vash/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/History.md" afterPath="$PROJECT_DIR$/node_modules/vash/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/History.md" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/LICENSE" afterPath="$PROJECT_DIR$/node_modules/vash/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/Makefile" afterPath="$PROJECT_DIR$/node_modules/vash/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/Makefile" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/README.html" afterPath="$PROJECT_DIR$/node_modules/vash/README.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/README.html" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/README.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/README.md" afterPath="$PROJECT_DIR$/node_modules/vash/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/README.md" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/README.org" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/README.org" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/README.vash" afterPath="$PROJECT_DIR$/node_modules/vash/README.vash" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/README_old.md" afterPath="$PROJECT_DIR$/node_modules/vash/README_old.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/Readme.md" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/array1.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/array1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/array1.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/array1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/array2.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/array2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/array2.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/array2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/array3.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/array3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/array3.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/array3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/array4.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/array4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/array4.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/array4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/assignment.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/assignment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/beautify.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/beautify.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/beep" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/beep" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/clear" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/clear" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/home.js" afterPath="$PROJECT_DIR$/controllers/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/concatstring.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/concatstring.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/docstyle.css" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/docstyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/empty-blocks.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/empty-blocks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/empty-blocks.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/empty-blocks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/support/exports.head.js" afterPath="$PROJECT_DIR$/node_modules/vash/support/exports.head.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/support/exports.tail.js" afterPath="$PROJECT_DIR$/node_modules/vash/support/exports.tail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/forstatement.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/forstatement.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/docs/gfm.css" afterPath="$PROJECT_DIR$/node_modules/vash/docs/gfm.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/ifreturn2.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/ifreturn2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/ifreturn2.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/ifreturn2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/imgcat" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/imgcat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.vash" afterPath="$PROJECT_DIR$/views/layout.vash" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/index.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/index.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.vash" afterPath="$PROJECT_DIR$/views/index.vash" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/tmp/instrument.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/tmp/instrument.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/tmp/instrument2.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/tmp/instrument2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue11.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue11.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue14.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue14.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue17.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue17.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue21.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue21.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue25.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue25.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue28.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue28.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue30.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue30.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue34.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue34.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue4.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue50.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue50.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue50.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue50.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue53.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue53.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue53.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue53.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue54.1.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue54.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue54.1.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue54.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue68.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue68.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue68.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue68.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue69.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/issue69.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue69.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue69.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue9.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/issue9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/support/license.header.js" afterPath="$PROJECT_DIR$/node_modules/vash/support/license.header.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/lodash" afterPath="$PROJECT_DIR$/node_modules/.bin/lodash" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/mangle.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/mangle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/mangle.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/mangle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/docs/helpers/md.vash" afterPath="$PROJECT_DIR$/node_modules/vash/docs/helpers/md.vash" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/node-gyp" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/node-gyp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/nodemon" afterPath="$PROJECT_DIR$/node_modules/.bin/nodemon" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/nopt" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/nopt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/npm" afterPath="$PROJECT_DIR$/node_modules/.bin/npm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/opener" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/opener" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/package/package.json" afterPath="$PROJECT_DIR$/node_modules/package/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/passportConfig.js" afterPath="$PROJECT_DIR$/infrastructure/passportConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/package.json" afterPath="$PROJECT_DIR$/node_modules/vash/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/package.json" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/lib/parse-js.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/lib/parse-js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/lib/process.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/lib/process.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/rimraf" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/rimraf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/routeConfig.js" afterPath="$PROJECT_DIR$/infrastructure/routeConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/scripts.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/lib/squeeze-more.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/lib/squeeze-more.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/starwars" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/starwars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/userService.js" afterPath="$PROJECT_DIR$/services/userService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/strict-equals.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/strict-equals.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/test.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/commander/node_modules/keypress/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/testparser.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/testparser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/uglify-js.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/uglify-js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/.bin/uglifyjs" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/.bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/build/vash-runtime-all.js" afterPath="$PROJECT_DIR$/node_modules/vash/build/vash-runtime-all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/build/vash-runtime-all.min.js" afterPath="$PROJECT_DIR$/node_modules/vash/build/vash-runtime-all.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/build/vash-runtime.js" afterPath="$PROJECT_DIR$/node_modules/vash/build/vash-runtime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/build/vash-runtime.min.js" afterPath="$PROJECT_DIR$/node_modules/vash/build/vash-runtime.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/build/vash.js" afterPath="$PROJECT_DIR$/node_modules/vash/build/vash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/build/vash.min.js" afterPath="$PROJECT_DIR$/node_modules/vash/build/vash.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/test/vows/vash.test.js" afterPath="$PROJECT_DIR$/node_modules/vash/test/vows/vash.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/test/vows/vash.test.layout.js" afterPath="$PROJECT_DIR$/node_modules/vash/test/vows/vash.test.layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/test/vows/vash.test.runtime.js" afterPath="$PROJECT_DIR$/node_modules/vash/test/vows/vash.test.runtime.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/vash" afterPath="$PROJECT_DIR$/node_modules/.bin/vash" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/bin/vash" afterPath="$PROJECT_DIR$/node_modules/vash/bin/vash" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/src/vast.js" afterPath="$PROJECT_DIR$/node_modules/vash/src/vast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/src/vcompiler.js" afterPath="$PROJECT_DIR$/node_modules/vash/src/vcompiler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/support/version.js" afterPath="$PROJECT_DIR$/node_modules/vash/support/version.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/src/vexports.js" afterPath="$PROJECT_DIR$/node_modules/vash/src/vexports.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/src/vexpress.js" afterPath="$PROJECT_DIR$/node_modules/vash/src/vexpress.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/src/vhelpers.js" afterPath="$PROJECT_DIR$/node_modules/vash/src/vhelpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/src/vhelpers.layout.js" afterPath="$PROJECT_DIR$/node_modules/vash/src/vhelpers.layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/src/vlexer.js" afterPath="$PROJECT_DIR$/node_modules/vash/src/vlexer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/src/vparser.js" afterPath="$PROJECT_DIR$/node_modules/vash/src/vparser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/src/vruntime.js" afterPath="$PROJECT_DIR$/node_modules/vash/src/vruntime.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/which" afterPath="$PROJECT_DIR$/node_modules/npm/node_modules/.bin/which" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/with.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/expected/with.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/with.js" afterPath="$PROJECT_DIR$/node_modules/vash/node_modules/uglify-js/test/unit/compress/test/with.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simufit.web.iws" />
@@ -49,7 +142,7 @@
     <file path="/Dummy.txt" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372818605616" ignored="false" />
     <file path="/index.bliss" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372367603550" ignored="false" />
     <file path="/home.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372367249520" ignored="false" />
-    <file path="/index.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372827140806" ignored="false" />
+    <file path="/index.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372827395500" ignored="false" />
     <file path="/layout.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372824801567" ignored="false" />
     <file path="/sidebar.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372738735307" ignored="false" />
     <file path="/footer.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372738776825" ignored="false" />
@@ -85,10 +178,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.vash" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="layout.vash" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layout.vash">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="194" selection-start="1722" selection-end="1722" vertical-scroll-proportion="-14.384615">
+            <state line="27" column="149" selection-start="1604" selection-end="1604" vertical-scroll-proportion="1.08">
               <folding />
             </state>
           </provider>
@@ -106,16 +199,16 @@
       <file leaf-file-name="index.vash" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.vash">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="17" selection-start="57" selection-end="57" vertical-scroll-proportion="-0.65384614">
+            <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="197" selection-start="1230" selection-end="1230" vertical-scroll-proportion="1.3392462">
+            <state line="8" column="179" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -153,8 +246,8 @@
         <option value="$PROJECT_DIR$/views/hours.html" />
         <option value="$PROJECT_DIR$/views/hours.vash" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/views/index.vash" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/index.vash" />
       </list>
     </option>
   </component>
@@ -517,23 +610,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.vash">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="194" selection-start="1722" selection-end="1722" vertical-scroll-proportion="-14.384615">
+        <state line="8" column="179" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.vash">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="57" selection-end="57" vertical-scroll-proportion="-0.65384614">
+        <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/views/layout.vash">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="197" selection-start="1230" selection-end="1230" vertical-scroll-proportion="1.3392462">
+        <state line="27" column="149" selection-start="1604" selection-end="1604" vertical-scroll-proportion="1.08">
           <folding />
         </state>
       </provider>
