@@ -13,7 +13,6 @@ var fs = require('fs');
 var routeConfig = require('./infrastructure/routeConfig');
 var passportConfig = require('./infrastructure/passportConfig');
 var passport = require('passport');
-var BundleUp = require('bundle-up');
 
 var app = express();
 
@@ -33,14 +32,6 @@ app.use(app.router);
 
 app.use(express.static(__dirname + '/common/'));
 app.use(express.static(__dirname + '/webApp/'));
-
-BundleUp(app, __dirname + '/assets', {
-    staticRoot: __dirname + '/webApp/',
-    staticUrlRoot:'/',
-    bundle:true,
-    minifyCss: true,
-    minifyJs: true
-});
 
 //register routes
 passportConfig.register(passport);
