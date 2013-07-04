@@ -13,6 +13,7 @@ var fs = require('fs');
 var routeConfig = require('./infrastructure/routeConfig');
 var passportConfig = require('./infrastructure/passportConfig');
 var passport = require('passport');
+global.nap = require('nap');
 
 var app = express();
 
@@ -22,7 +23,7 @@ app.set('view engine', 'jade');
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.cookieParser());
-app.use(express.bodyParser());
+app.use(express.bodyParser());                             s
 app.use(express.session({ secret: 'keyboard cat' }));
 app.use(passport.initialize());
 app.use(passport.session());
@@ -30,13 +31,34 @@ app.use(express.methodOverride());
 app.use(flash());
 app.use(app.router);
 
-app.use(express.static(__dirname + '/common/'));
+app.use(express.static(__dirname + '/public/'));
 app.use(express.static(__dirname + '/webApp/'));
 
 //register routes
 passportConfig.register(passport);
 routeConfig.registerViewRoutes(app, passport);
 routeConfig.registerApiRoutes(app);
+
+
+nap({
+    assets: {
+        js:{
+             base:[
+                '/public/bootstrap/js/bootstrap.js',
+                '/public/theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js'
+             ]
+        },
+        css:{
+            styles:[
+                '/public/bootstrap/css/bootstrap.css',
+                '/public/bootstrap/css/responsive.css',
+                '/public/theme/fonts/glyphicons/css/glyphicons.css',
+                '/public/theme/fonts/font-awesome/css/font-awesome.min.css',
+                '/public/theme/css/style-flat.css'
+            ]
+        }
+    }
+});
 
 //SSL
 var options = {
