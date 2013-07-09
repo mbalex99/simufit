@@ -23,7 +23,7 @@ app.set('view engine', 'jade');
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.cookieParser());
-app.use(express.bodyParser());                             s
+app.use(express.bodyParser());
 app.use(express.session({ secret: 'keyboard cat' }));
 app.use(passport.initialize());
 app.use(passport.session());
@@ -32,7 +32,9 @@ app.use(flash());
 app.use(app.router);
 
 app.use(express.static(__dirname + '/public/'));
-app.use(express.static(__dirname + '/webApp/'));
+app.use("/partials", express.static(__dirname + '/partials'));
+app.use("/webapp", express.static(__dirname + '/webapp'));
+
 
 //register routes
 passportConfig.register(passport);
@@ -43,17 +45,18 @@ routeConfig.registerApiRoutes(app);
 nap({
     assets: {
         js:{
+            head:[
+                '/public/theme/scripts/plugins/system/less.min.js'
+            ],
              base:[
-                '/public/bootstrap/js/bootstrap.js',
-                '/public/theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js'
+
+             ],
+             webApp: [
+                '/webApp/**/*.js'
              ]
         },
         css:{
             styles:[
-                '/public/bootstrap/css/bootstrap.css',
-                '/public/bootstrap/css/responsive.css',
-                '/public/theme/fonts/glyphicons/css/glyphicons.css',
-                '/public/theme/fonts/font-awesome/css/font-awesome.min.css',
                 '/public/theme/css/style-flat.css'
             ]
         }

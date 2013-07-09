@@ -1,22 +1,29 @@
-extend layout
-block content
-    p
-        | Vivamus hendrerit arcu sed erat molestie
-        | vehicula. Sed auctor neque eu tellus
-        | rhoncus ut eleifend nibh porttitor. Ut in.
-    p
-        | Donec congue lacinia dui, a porttitor
-        | lectus condimentum laoreet. Nunc eu
-        | ullamcorper orci. Quisque eget odio ac
-        | lectus vestibulum faucibus eget in metus.
-        | In pellentesque faucibus vestibulum. Nulla
-        | at nulla justo, eget luctus tortor.
-block sidebar
-    .widget
-        h1 Widget
-        p
-            | Sed auctor neque eu tellus rhoncus ut
-            | eleifend nibh porttitor. Ut in nulla enim.
-        p
-            | Vivamus hendrerit arcu sed erat molestie
-            | vehicula.
+!!!5
+html(ng-app="webApp")
+    head
+        title.
+            my site
+        meta(charset="UTF-8")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0")
+        meta(name="apple-mobile-web-app-capable",content="yes")
+        meta(http-equiv="X-UA-Compatible",content="IE=9; IE=8; IE=7; IE=EDGE")
+        link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css", rel="stylesheet")
+        link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css", rel="stylesheet")
+        != nap.css('styles')
+        != nap.js('head')
+    body(class="")
+        div(class="container-fluid fluid menu-left")
+            div(id="wrapper")
+                div(ng-include="'partials/sidebar.html'")
+                div(id="content")
+                    div(ng-view)
+            div(class="clearfix")
+            div(id="footer", class="hidden-print")
+                div(class="copy") &copy; 2012-2013 Simufit & Max Alexander
+        #scripts
+            script(type="text/javascript", src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js")
+            script(type="text/javascript", src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js")
+            script(type="text/javascript", src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js")
+            != nap.js('base')
+            != nap.js('webApp')
+
