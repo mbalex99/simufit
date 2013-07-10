@@ -46,9 +46,10 @@ nap({
     assets: {
         js:{
              base:[
-                 '/public/theme/scripts/plugins/system/modernizr.js',
-                 '/public/theme/scripts/plugins/calendars/fullcalendar/fullcalendar/fullcalendar.js',
-                 '/public/theme/scripts/plugins/forms/pixelmatrix-uniform/jquery.uniform.min.js'
+                 '/public/js/modernizr.js',
+                 '/public/js/fullcalendar.js',
+                 '/public/js/jquery.uniform.js',
+                 '/public/jquery.ui.widget.js'
              ],
              webApp: [
                 '/webApp/**/*.js'
@@ -56,10 +57,10 @@ nap({
         },
         css:{
             styles:[
-                '/public/theme/css/style-flat.css',
-                '/public/theme/css/style-simufit.css',
-                '/public/theme/scripts/plugins/forms/pixelmatrix-uniform/css/uniform.default.css',
-                '/public/theme/scripts/plugins/calendars/fullcalendar/fullcalendar/fullcalendar.css'
+                '/public/css/style-flat.css',
+                '/public/css/style-simufit.css',
+                '/public/css/uniform.default.css',
+                '/public/css/fullcalendar.css'
             ]
         }
     }
