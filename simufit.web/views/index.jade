@@ -1,5 +1,5 @@
 !!!5
-html(ng-app="webApp")
+html(ng-app="webApp", class="fluid top-full sticky-top sidebar sidebar-full js no-touch csstransforms3d csstransitions")
     head
         title.
             my site
@@ -7,6 +7,7 @@ html(ng-app="webApp")
         meta(name="viewport",content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0")
         meta(name="apple-mobile-web-app-capable",content="yes")
         meta(http-equiv="X-UA-Compatible",content="IE=9; IE=8; IE=7; IE=EDGE")
+        meta(name="apple-mobile-web-app-status-bar-style",content="black")
         link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css", rel="stylesheet")
         link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css", rel="stylesheet")
         != nap.css('styles')
@@ -14,9 +15,24 @@ html(ng-app="webApp")
     body(class="")
         div(class="container-fluid fluid menu-left")
             div(id="wrapper")
-                div(ng-include="'partials/sidebar.html'")
+                div(id="menu", class="hidden-phone hidden-print")
+                    a(href="/", class="appbrand").
+                        Simufit
+                    span(class="profile center")
+                        a(href="#/profile")
+                            img(src="http://placehold.it/36x36")
+                            Max
+                    ul
+                        li
+                            a(class="glyphicons right_arrow", href="#") Dashboard
+                        li
+                            a(class="glyphicons right_arrow", href="#") Progress
                 div(id="content")
-                    div(ng-view)
+                    div(class="navbar main hidden-print")
+                        ul(class="topnav pull-right hidden-phone hidden-tablet hidden-desktop-1")
+                            li(class="account dropdown dd-1")
+                                a(data-toggle="dropdown",href="#/profile")
+                    div(class="ng-view")
             div(class="clearfix")
             div(id="footer", class="hidden-print")
                 div(class="copy") &copy; 2012-2013 Simufit & Max Alexander

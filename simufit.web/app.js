@@ -49,7 +49,9 @@ nap({
                 '/public/theme/scripts/plugins/system/less.min.js'
             ],
              base:[
-
+                 '/public/theme/scripts/plugins/system/modernizr.js',
+                 '/public/theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js',
+                 '/public/theme/scripts/demo/common.js'
              ],
              webApp: [
                 '/webApp/**/*.js'
@@ -57,7 +59,8 @@ nap({
         },
         css:{
             styles:[
-                '/public/theme/css/style-flat.css'
+                '/public/theme/css/style-flat.css',
+                '/public/theme/css/style-simufit.css'
             ]
         }
     }
