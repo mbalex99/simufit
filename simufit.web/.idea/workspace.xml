@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/partials/dashboard.html" line="0" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="b56be73c-1143-42cd-b805-48276c606e69" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\theme\scripts\demo\common.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webApp/directives/calendar.js" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\theme\scripts\plugins\other\jquery-slimScroll\jquery.slimscroll.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\theme\scripts\plugins\system\less.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/webApp/controllers/DashboardCtrl.js" afterPath="$PROJECT_DIR$/public/assets/webApp/controllers/DashboardCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webApp/controllers/DashboardCtrl.js" afterPath="$PROJECT_DIR$/webApp/controllers/DashboardCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/dashboard.html" afterPath="$PROJECT_DIR$/partials/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/webApp/directives/sidebar.js" afterPath="$PROJECT_DIR$/public/assets/webApp/directives/sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webApp/directives/sidebar.js" afterPath="$PROJECT_DIR$/webApp/directives/sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/webApp/appConfig/webApp.js" afterPath="$PROJECT_DIR$/public/assets/webApp/appConfig/webApp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webApp/appConfig/webApp.js" afterPath="$PROJECT_DIR$/webApp/appConfig/webApp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simufit.web.iws" />
@@ -27,7 +33,7 @@
     <file path="/dbFactory.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372340176851" ignored="false" />
     <file path="/readme.md" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372363721320" ignored="false" />
     <file path="/index.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372363818229" ignored="false" />
-    <file path="/Dummy.txt" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373410349647" ignored="false" />
+    <file path="/Dummy.txt" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373470994009" ignored="false" />
     <file path="/index.bliss" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372367603550" ignored="false" />
     <file path="/home.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372367249520" ignored="false" />
     <file path="/index.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372827395500" ignored="false" />
@@ -36,17 +42,18 @@
     <file path="/footer.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372738776825" ignored="false" />
     <file path="/bundleConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372744534539" ignored="false" />
     <file path="/assets.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372875787164" ignored="false" />
-    <file path="/webApp.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373347755731" ignored="false" />
+    <file path="/webApp.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373477361948" ignored="false" />
     <file path="/package.json" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372874992526" ignored="false" />
     <file path="/layout.jade" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373347899719" ignored="false" />
     <file path="/sidebar.jade" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372875988023" ignored="false" />
-    <file path="/index.jade" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373430941558" ignored="false" />
+    <file path="/index.jade" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373477831302" ignored="false" />
     <file path="$PROJECT_DIR$/public/assets/public/theme/fonts/font-awesome/css/font-awesome.min.css" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372960040515" ignored="false" />
     <file path="$PROJECT_DIR$/public/assets/public/theme/fonts/glyphicons/css/glyphicons.css" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372960040515" ignored="false" />
-    <file path="/DashboardCtrl.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373431040320" ignored="false" />
-    <file path="/dashboard.html" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373432224555" ignored="false" />
-    <file path="/sidebar.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373410908570" ignored="false" />
+    <file path="/DashboardCtrl.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373477392572" ignored="false" />
+    <file path="/dashboard.html" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373477725089" ignored="false" />
+    <file path="/sidebar.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373477421786" ignored="false" />
     <file path="/style-simufit.css" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373430966574" ignored="false" />
+    <file path="/calendar.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373477412604" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,36 +76,7 @@
       <file leaf-file-name="webApp.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webApp/appConfig/webApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="89" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webApp/directives/sidebar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="12" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#161#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="100" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/index.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="42" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.36483517">
+            <state line="14" column="72" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,7 +85,7 @@
       <file leaf-file-name="DashboardCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webApp/controllers/DashboardCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="31" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+            <state line="1" column="33" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,25 +94,34 @@
       <file leaf-file-name="sidebar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/sidebar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="85" selection-start="552" selection-end="552" vertical-scroll-proportion="-7.1923075">
+            <state line="18" column="17" selection-start="824" selection-end="824" vertical-scroll-proportion="-11.769231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="4" selection-start="23" selection-end="23" vertical-scroll-proportion="-0.65384614">
+            <state line="7" column="21" selection-start="159" selection-end="159" vertical-scroll-proportion="0.19318181">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topnav.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/topnav.html">
+      <file leaf-file-name="calendar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webApp/directives/calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="23" selection-start="862" selection-end="862" vertical-scroll-proportion="-15.192307">
+            <state line="31" column="89" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-133.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webApp/directives/sidebar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="11" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,22 +145,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/infrastructure/routeConfig.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/webApp/controllers/dashboard.js" />
         <option value="$PROJECT_DIR$/public/webApp/appConfig/routeConfig.js" />
         <option value="$PROJECT_DIR$/public/webApp/appConfig/webApp.js" />
         <option value="$PROJECT_DIR$/public/webApp/controllers/DashboardCtrl.js" />
-        <option value="$PROJECT_DIR$/webApp/appConfig/webApp.js" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
-        <option value="$PROJECT_DIR$/webApp/directives/sidebar.js" />
         <option value="$PROJECT_DIR$/partials/topnav.html" />
         <option value="$PROJECT_DIR$/partials/sidebar.html" />
         <option value="$PROJECT_DIR$/public/theme/css/style-simufit.css" />
-        <option value="$PROJECT_DIR$/webApp/controllers/DashboardCtrl.js" />
-        <option value="$PROJECT_DIR$/partials/dashboard.html" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/webApp/appConfig/webApp.js" />
+        <option value="$PROJECT_DIR$/webApp/controllers/DashboardCtrl.js" />
+        <option value="$PROJECT_DIR$/webApp/directives/sidebar.js" />
+        <option value="$PROJECT_DIR$/partials/dashboard.html" />
         <option value="$PROJECT_DIR$/views/index.jade" />
+        <option value="$PROJECT_DIR$/webApp/directives/calendar.js" />
       </list>
     </option>
   </component>
@@ -223,6 +210,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,6 +226,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="simufit.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simufit.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simufit.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,6 +274,28 @@
               <option name="myItemId" value="webApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simufit.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simufit.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appConfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -303,14 +327,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
@@ -334,6 +357,14 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.Node">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
@@ -388,16 +419,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18028466" sideWeight="0.53563476" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10542963" sideWeight="0.74304783" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39807898" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46436524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25695217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -493,6 +524,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/routeConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="14" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" />
@@ -524,7 +562,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="969" selection-end="969" vertical-scroll-proportion="0.019790454">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
             <element signature="n#!!block;n#randNum#0" expanded="false" />
             <element signature="n#!!block;n#PDFTarget#0" expanded="false" />
             <element signature="n#!!block;n#beautify#0" expanded="false" />
@@ -539,74 +577,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/topnav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="23" selection-start="862" selection-end="862" vertical-scroll-proportion="-15.192307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/theme/css/style-flat.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webApp/directives/sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#161#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/theme/css/style-simufit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="53" selection-end="53" vertical-scroll-proportion="0.07472528">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webApp/controllers/DashboardCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="31" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="85" selection-start="552" selection-end="552" vertical-scroll-proportion="-7.1923075">
+        <state line="18" column="17" selection-start="824" selection-end="824" vertical-scroll-proportion="-11.769231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="100" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.0">
+        <state line="46" column="12" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.5964912">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/webApp/controllers/DashboardCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="23" selection-end="23" vertical-scroll-proportion="-0.65384614">
+        <state line="1" column="33" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webApp/appConfig/webApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="89" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0">
+        <state line="14" column="72" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webApp/directives/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="89" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-133.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webApp/directives/sidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="11" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="42" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.36483517">
+        <state line="10" column="108" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="159" selection-end="159" vertical-scroll-proportion="0.19318181">
           <folding />
         </state>
       </provider>

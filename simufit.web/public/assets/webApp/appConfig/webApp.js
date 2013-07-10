@@ -6,20 +6,20 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var webApp = webApp || {};
+var Application = Application || {};
 
-webApp.Constants = angular.module('webApp.constants', []);
-webApp.Services = angular.module('webApp.services', []);
-webApp.Controllers = angular.module('webApp.controllers', []);
-webApp.Filters = angular.module('webApp.filters', []);
-webApp.Directives = angular.module('webApp.directives', []);
+Application.Constants = angular.module('application.constants', []);
+Application.Services = angular.module('application.services', []);
+Application.Controllers = angular.module('application.controllers', []);
+Application.Filters = angular.module('application.filters', []);
+Application.Directives = angular.module('application.directives', []);
 
-angular.module('webApp',[
-    'webApp.filters',
-    'webApp.constants',
-    'webApp.services',
-    'webApp.directives',
-    'webApp.controllers'
+angular.module('application',[
+    'application.filters',
+    'application.constants',
+    'application.services',
+    'application.directives',
+    'application.controllers'
 ]).config(['$routeProvider', function($routeProvider){
         $routeProvider.
             when('/', {templateUrl: 'partials/dashboard.html', controller: 'DashboardCtrl'});

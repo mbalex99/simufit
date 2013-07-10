@@ -45,12 +45,8 @@ routeConfig.registerApiRoutes(app);
 nap({
     assets: {
         js:{
-            head:[
-                '/public/theme/scripts/plugins/system/less.min.js'
-            ],
              base:[
                  '/public/theme/scripts/plugins/system/modernizr.js',
-                 '/public/theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js',
                  '/public/theme/scripts/plugins/calendars/fullcalendar/fullcalendar/fullcalendar.js'
              ],
              webApp: [
