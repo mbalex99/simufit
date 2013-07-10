@@ -51,7 +51,7 @@ nap({
              base:[
                  '/public/theme/scripts/plugins/system/modernizr.js',
                  '/public/theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js',
-                 '/public/theme/scripts/demo/common.js'
+                 '/public/theme/scripts/plugins/calendars/fullcalendar/fullcalendar/fullcalendar.js'
              ],
              webApp: [
                 '/webApp/**/*.js'
@@ -60,7 +60,8 @@ nap({
         css:{
             styles:[
                 '/public/theme/css/style-flat.css',
-                '/public/theme/css/style-simufit.css'
+                '/public/theme/css/style-simufit.css',
+                '/public/theme/scripts/plugins/calendars/fullcalendar/fullcalendar/fullcalendar.css'
             ]
         }
     }
