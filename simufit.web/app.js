@@ -33,8 +33,6 @@ app.use(passport.session());
 app.use(express.methodOverride());
 app.use(flash());
 app.use(app.router);
-
-
 app.use("/partials", express.static(path.join(__dirname + '/partials')));
 app.use("/webapp", express.static(path.join(__dirname + '/webapp')));
 app.use(express.static(path.join(__dirname + '/public')));
@@ -44,8 +42,6 @@ passportConfig.register(passport);
 napConfig.register(nap);
 routeConfig.registerViewRoutes(app, passport);
 routeConfig.registerApiRoutes(app);
-
-
 
 
 //SSL

@@ -5,31 +5,9 @@
         <div calendar></div>
     </div>
     <div class="span5">
-        <a class="btn pull-right btn-success">
-            <i class="icon-plus"></i>
-        </a>
         <h4>To Dos</h4>
-        <table class="table table-hover">
-            <tbody>
-                <tr ng-repeat="toDo in focusedToDos">
-                    <td>
-                        <input uniform-checkbox type="checkbox" ng-model="toDo.isDone">
-                    </td>
-                    <td>
-                        <input type="text" ng-model="toDo.title" class="span12" />
-                    </td>
-                    <td>
-                        <a>
-                            <i class="icon-caret-right"></i>
-                        </a> &nbsp &nbsp
-                        <a>
-                            <i class="icon-remove"></i>
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <to-do-editor ng-model="focusedToDos"></to-do-editor>
         <h4>Measurements</h4>
-        <measurements-editor></measurements-editor>
+        <measurements-editor ng-model="measurements"></measurements-editor>
     </div>
 </div>

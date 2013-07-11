@@ -1,9 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
 
-</body>
-</html>
+
+<span ng-show="!isEditorEnabled">
+    <a ng-click="enableEditor()">{{text}}</a>
+</span>
+<div ng-show="isEditorEnabled">
+    <div class="input-append span8">
+        <input type="text" ng-show="isEditorEnabled" ng-model="editableText" class="span12" />
+        <button class="btn" type="button" ng-click="save()">Ok</button>
+        <button class="btn" type="button" ng-click="disableEditor()">Cancel</button>
+    </div>
+</div>
+

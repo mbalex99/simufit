@@ -29,6 +29,15 @@ html(ng-app="application", class="fluid top-full sticky-top sidebar sidebar-full
                     div(class="navbar main hidden-print")
                         ul(class="topnav pull-right hidden-phone hidden-tablet hidden-desktop-1")
                             li(class="account dropdown dd-1")
+                                a(data-toggle="dropdown", class="logout lock")
+                                    span(class="hidden-tablet hidden-phone hidden-desktop-1") Max Alexander
+                                ul(class="dropdown-menu pull-right")
+                                    li
+                                        a(class="btn btn-default btn-mini") Settings
+                                    li
+                                        a(class="btn btn-default btn-mini pull-right") Logout
+
+
                     div(class="ng-view")
             div(class="clearfix")
             div(id="footer", class="hidden-print")
