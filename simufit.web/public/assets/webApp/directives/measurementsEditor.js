@@ -8,9 +8,12 @@
 Application.Directives.directive('measurementsEditor', function(){
    return{
        restrict: 'EAC',
-       templateUrl: 'partials/measurements-editor.html'
+       templateUrl: 'partials/measurements-editor.html',
        scope:{
            ngModel: '='
+       },
+       link: function(scope, element, attrs){
+
        }
    };
 });

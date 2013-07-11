@@ -12,8 +12,11 @@ var flash = require('connect-flash');
 var fs = require('fs');
 var routeConfig = require('./infrastructure/routeConfig');
 var passportConfig = require('./infrastructure/passportConfig');
+var napConfig = require('./infrastructure/napConfig');
 var passport = require('passport');
+var io = require('socket.io');
 global.nap = require('nap');
+
 
 var app = express();
 
@@ -38,37 +41,12 @@ app.use(express.static(path.join(__dirname + '/public')));
 
 //register routes
 passportConfig.register(passport);
+napConfig.register(nap);
 routeConfig.registerViewRoutes(app, passport);
 routeConfig.registerApiRoutes(app);
 
 
-nap({
-    assets: {
-        js:{
-             base:[
-                 '/public/js/modernizr.js',
-                 '/public/js/jquery.js',
-                 '/public/js/jquery-migrate.js',
-                 '/public/js/angular.js',
-                 '/public/js/bootstrap.js',
-                 '/public/js/fullcalendar.js',
-                 '/public/js/jquery.uniform.js',
-                 '/public/jquery.ui.widget.js'
-             ],
-             webApp: [
-                '/webApp/**/*.js'
-             ]
-        },
-        css:{
-            styles:[
-                '/public/css/style-flat.css',
-                '/public/css/style-simufit.css',
-                '/public/css/uniform.default.css',
-                '/public/css/fullcalendar.css'
-            ]
-        }
-    }
-});
+
 
 //SSL
 var options = {
@@ -78,4 +56,6 @@ var options = {
 var server = https.createServer(options, app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));
 });
+
+io.listen(server);
 module.exports = app;
