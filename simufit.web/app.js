@@ -31,10 +31,10 @@ app.use(express.methodOverride());
 app.use(flash());
 app.use(app.router);
 
-app.use(express.static(__dirname + '/public/'));
-app.use("/partials", express.static(__dirname + '/partials'));
-app.use("/webapp", express.static(__dirname + '/webapp'));
 
+app.use("/partials", express.static(path.join(__dirname + '/partials')));
+app.use("/webapp", express.static(path.join(__dirname + '/webapp')));
+app.use(express.static(path.join(__dirname + '/public')));
 
 //register routes
 passportConfig.register(passport);
@@ -47,6 +47,10 @@ nap({
         js:{
              base:[
                  '/public/js/modernizr.js',
+                 '/public/js/jquery.js',
+                 '/public/js/jquery-migrate.js',
+                 '/public/js/angular.js',
+                 '/public/js/bootstrap.js',
                  '/public/js/fullcalendar.js',
                  '/public/js/jquery.uniform.js',
                  '/public/jquery.ui.widget.js'
