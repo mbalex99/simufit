@@ -2,58 +2,220 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b56be73c-1143-42cd-b805-48276c606e69" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/infrastructure/apiRouteConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/apiControllers/entries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/entryService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/splash.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/viewControllers/splash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/apiControllers/users.js" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\controllers\apiControllers\entry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\css\fullcalendar.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\css\style-flat.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\css\style-simufit.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\css\uniform.default.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\js\angular.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\js\fullcalendar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\js\jquery-migrate.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\js\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\js\jquery.uniform.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\js\lodash.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\public\js\modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\webApp\appConfig\webApp.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\webApp\controllers\DashboardCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\webApp\directives\calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\webApp\directives\clickToEdit.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\webApp\directives\measurementsEditor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\webApp\directives\sidebar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\webApp\directives\sortable.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\webApp\directives\titleEdit.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\webApp\directives\toDoEditor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\public\assets\webApp\directives\uniformCheckbox.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/dbFactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/models/user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/schemas/user.js" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\controllers\apiControllers\entries.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\controllers\apiControllers\users.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\install.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\admin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\auth\mongodb_cr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\auth\mongodb_gssapi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\auth\mongodb_sspi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\collection.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\commands\base_command.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\commands\db_command.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\commands\delete_command.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\commands\get_more_command.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\commands\insert_command.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\commands\kill_cursor_command.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\commands\query_command.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\commands\update_command.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\base.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\connection.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\connection_pool.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\connection_utils.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\mongos.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\read_preference.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\repl_set\ha.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\repl_set\options.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\repl_set\repl_set.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\repl_set\repl_set_state.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\repl_set\strategies\ping_strategy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\repl_set\strategies\statistics_strategy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\server.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\connection\url_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\cursorstream.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\db.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\gridfs\chunk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\gridfs\grid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\gridfs\gridstore.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\gridfs\readstream.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\mongo_client.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\lib\mongodb\utils.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\binding.gyp" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\browser_build\bson.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\browser_build\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\build_browser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\builderror.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\ext\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\ext\bson.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\ext\bson.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\ext\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\ext\win32\ia32\bson.node" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\ext\win32\x64\bson.node" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\ext\wscript" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\binary.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\binary_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\bson.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\code.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\db_ref.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\double.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\float_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\long.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\max_key.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\min_key.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\objectid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\symbol.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\lib\bson\timestamp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\tools\gleak.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\tools\jasmine-1.1.0\MIT.LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\tools\jasmine-1.1.0\jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\tools\jasmine-1.1.0\jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\tools\jasmine-1.1.0\jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\bson\tools\jasmine-1.1.0\jasmine_favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\binding.gyp" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\builderror.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\auth_processes\mongodb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\base64.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\base64.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\kerberos.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\kerberos.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\kerberos.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\kerberos_context.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\kerberos_context.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\kerberosgss.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\kerberosgss.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\sspi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\base64.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\base64.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\kerberos.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\kerberos.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\kerberos_sspi.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\kerberos_sspi.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\worker.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\worker.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer_descriptor.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer_descriptor.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer_descriptor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_context.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_context.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_context.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_credentials.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_credentials.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_credentials.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\worker.cc" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\lib\worker.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\test\kerberos_tests.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\test\kerberos_win32_test.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\test\win32\security_buffer_descriptor_tests.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\test\win32\security_buffer_tests.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\node_modules\kerberos\test\win32\security_credentials_tests.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\mongodb\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\duplex.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\examples\CAPSLOCKTYPER.JS" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\examples\typer-fsr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\examples\typer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\fs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\lib\_stream_duplex.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\lib\_stream_passthrough.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\lib\_stream_readable.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\lib\_stream_transform.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\lib\_stream_writable.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\passthrough.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\readable.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\common.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\fixtures\x1024.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-basic.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-compatibility.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-finish-pipe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-large-read-stall.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-objects.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-pipe-error-handling.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-push.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-read-sync-stack.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-readable-empty-buffer-no-eof.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-readable-from-list.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-readable-legacy-drain.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-readable-non-empty-end.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-set-encoding.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-transform.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-unpipe-drain.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-unpipe-leak.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\test\simple\test-stream2-writable.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\transform.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\writable.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\readable-stream\zlib.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\thunky\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\thunky\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\node_modules\thunky\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\index.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\insert.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-find-and-select.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-find-by-objectid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-find-cursor-options.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-find-cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-find-limit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-find-one.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-find-query.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-find.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-group.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-remove.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-runcommand.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-simple.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-streaming-cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-update-and-callback.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-update-multi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\node_modules\mongojs\tests\test-update.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\services\dbFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\services\entryService.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GithubProjects\simufit\simufit.web\services\userService.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/apiRouteConfig.js" afterPath="$PROJECT_DIR$/infrastructure/apiRouteConfig.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/passportConfig.js" afterPath="$PROJECT_DIR$/infrastructure/passportConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/routeConfig.js" afterPath="$PROJECT_DIR$/infrastructure/routeConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/userService.js" afterPath="$PROJECT_DIR$/services/userService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webApp/appConfig/webApp.js" afterPath="$PROJECT_DIR$/webApp/appConfig/webApp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simufit.web.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/app.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373591634826" ignored="false" />
+    <file path="/app.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373662264173" ignored="false" />
     <file path="/web.config" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372135074036" ignored="false" />
     <file path="/routeConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373589288082" ignored="false" />
     <file path="/imageTypes.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372290111036" ignored="false" />
     <file path="/appConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372299009880" ignored="false" />
     <file path="/dbClient.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372266050454" ignored="false" />
-    <file path="/fragment.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372275922373" ignored="false" />
+    <file path="/fragment.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373601375173" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/tedious/lib/connection.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372276708622" ignored="false" />
     <file path="/authConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372299200278" ignored="false" />
-    <file path="/userService.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373597946464" ignored="false" />
-    <file path="/passportConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373587434677" ignored="false" />
+    <file path="/userService.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373599907281" ignored="false" />
+    <file path="/passportConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373660414853" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/q/queue.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372301828916" ignored="false" />
-    <file path="/dbFactory.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372340176851" ignored="false" />
+    <file path="/dbFactory.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373655427930" ignored="false" />
     <file path="/readme.md" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372363721320" ignored="false" />
     <file path="/index.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372363818229" ignored="false" />
     <file path="/Dummy.txt" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373580238200" ignored="false" />
@@ -92,12 +254,14 @@
     <file path="/home.jade" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373580555102" ignored="false" />
     <file path="/splash.jade" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373583093390" ignored="false" />
     <file path="$PROJECT_DIR$/public/assets/public/css/style-flat.css" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373584578700" ignored="false" />
-    <file path="/entry.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373589417271" ignored="false" />
+    <file path="/entry.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373646622591" ignored="false" />
     <file path="/event.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373589344440" ignored="false" />
-    <file path="/apiRouteConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373597685439" ignored="false" />
-    <file path="/users.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373597657862" ignored="false" />
-    <file path="/entries.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373598846070" ignored="false" />
-    <file path="/entryService.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373598729597" ignored="false" />
+    <file path="/apiRouteConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373604563048" ignored="false" />
+    <file path="/users.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373658673240" ignored="false" />
+    <file path="/entries.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373604498957" ignored="false" />
+    <file path="/entryService.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373604899560" ignored="false" />
+    <file path="/user.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373660115245" ignored="false" />
+    <file path="/toDo.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373646926162" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,51 +275,34 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="userService.js" pinned="false" current="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/services/userService.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="66" column="0" selection-start="1652" selection-end="1652" vertical-scroll-proportion="0.513468">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="simufit.web" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="entryService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/entryService.js">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#162#0" expanded="false" />
-                <element signature="e#279#677#0" expanded="false" />
-                <element signature="e#723#1256#0" expanded="false" />
-                <element signature="e#1100#1222#0" expanded="false" />
-                <element signature="e#1307#1807#0" expanded="false" />
-                <element signature="e#1851#2103#0" expanded="false" />
-              </folding>
+            <state line="37" column="172" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.5261122">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entries.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/apiControllers/entries.js">
+      <file leaf-file-name="passportConfig.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/passportConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="10" selection-start="386" selection-end="386" vertical-scroll-proportion="0.42829457">
+            <state line="29" column="0" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routeConfig.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/routeConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="52" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,7 +311,7 @@
       <file leaf-file-name="apiRouteConfig.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/infrastructure/apiRouteConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="48" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+            <state line="18" column="56" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#162#0" expanded="false" />
               </folding>
@@ -172,10 +319,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/apiControllers/users.js">
+      <file leaf-file-name="configuration.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configuration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="16" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
+            <state line="9" column="127" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbFactory.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/dbFactory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#162#0" expanded="false" />
               </folding>
@@ -201,22 +357,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/infrastructure/napConfig.js" />
-        <option value="$PROJECT_DIR$/views/home.jade" />
-        <option value="$PROJECT_DIR$/controllers/viewControllers/splash.js" />
-        <option value="$PROJECT_DIR$/views/splash.jade" />
-        <option value="$PROJECT_DIR$/infrastructure/passportConfig.js" />
-        <option value="$PROJECT_DIR$/views/index.jade" />
-        <option value="$PROJECT_DIR$/webApp/appConfig/webApp.js" />
-        <option value="$PROJECT_DIR$/controllers/apiControllers/entry.js" />
-        <option value="$PROJECT_DIR$/controllers/apiControllers/event.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/infrastructure/routeConfig.js" />
+        <option value="$PROJECT_DIR$/services/userService.js" />
+        <option value="$PROJECT_DIR$/controllers/apiControllers/entries.js" />
+        <option value="$PROJECT_DIR$/services/entryService.js" />
+        <option value="$PROJECT_DIR$/data/schemas/Entry.js" />
+        <option value="$PROJECT_DIR$/data/schemas/ToDo.js" />
+        <option value="$PROJECT_DIR$/data/schemas/entry.js" />
+        <option value="$PROJECT_DIR$/data/schemas/toDo.js" />
+        <option value="$PROJECT_DIR$/data/dbFactory.js" />
         <option value="$PROJECT_DIR$/controllers/apiControllers/users.js" />
         <option value="$PROJECT_DIR$/infrastructure/apiRouteConfig.js" />
-        <option value="$PROJECT_DIR$/services/userService.js" />
-        <option value="$PROJECT_DIR$/services/entryService.js" />
-        <option value="$PROJECT_DIR$/controllers/apiControllers/entries.js" />
+        <option value="$PROJECT_DIR$/data/models/user.js" />
+        <option value="$PROJECT_DIR$/data/schemas/user.js" />
+        <option value="$PROJECT_DIR$/infrastructure/passportConfig.js" />
+        <option value="$PROJECT_DIR$/configuration.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -295,7 +451,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="infrastructure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,7 +465,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,11 +479,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apiControllers" />
+              <option name="myItemId" value="schemas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simufit.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simufit.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,19 +598,39 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2641012" sideWeight="0.6028921" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3971079" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2641012" sideWeight="0.60400444" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39599556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31034482" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29477197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -520,52 +714,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/infrastructure/passportConfig.js</url>
-          <line>19</line>
-          <option name="timeStamp" value="26" />
+          <line>18</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/services/entryService.js</url>
-          <line>32</line>
-          <option name="timeStamp" value="29" />
+          <url>file://$PROJECT_DIR$/infrastructure/passportConfig.js</url>
+          <line>29</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="33" />
+      <option name="time" value="40" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/viewControllers/splash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#162#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="101" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.7234042">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webApp/appConfig/webApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="41" selection-start="935" selection-end="935" vertical-scroll-proportion="0.71308726">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/viewControllers/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="165" selection-end="400" vertical-scroll-proportion="0.25671142">
@@ -580,13 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/passportConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/napConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="16" selection-start="243" selection-end="243" vertical-scroll-proportion="0.34343433">
@@ -594,69 +751,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="86" selection-start="1422" selection-end="1422" vertical-scroll-proportion="1.1734006">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/dbFactory.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/schema.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/routeConfig.js">
+    <entry file="file://$PROJECT_DIR$/data/schemas/toDo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.48653197">
-          <folding />
+        <state line="11" column="29" selection-start="275" selection-end="275" vertical-scroll-proportion="0.09309967">
+          <folding>
+            <element signature="e#0#163#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/schemas/entry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="26" selection-start="361" selection-end="361" vertical-scroll-proportion="0.16757941">
+          <folding>
+            <element signature="e#0#163#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dbFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/apiRouteConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="48" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+        <state line="18" column="56" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#162#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/userService.js">
+    <entry file="file://$PROJECT_DIR$/data/schemas/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1652" selection-end="1652" vertical-scroll-proportion="0.513468">
+        <state line="18" column="21" selection-start="420" selection-end="420" vertical-scroll-proportion="0.23367697">
+          <folding>
+            <element signature="e#0#163#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/models/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="239" selection-end="239" vertical-scroll-proportion="0.09864604">
+          <folding>
+            <element signature="e#0#163#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/routeConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="52" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/apiControllers/users.js">
+    <entry file="file://$PROJECT_DIR$/infrastructure/passportConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#162#0" expanded="false" />
-          </folding>
+        <state line="29" column="0" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/entryService.js">
+    <entry file="file://$PROJECT_DIR$/configuration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#162#0" expanded="false" />
-            <element signature="e#279#677#0" expanded="false" />
-            <element signature="e#723#1256#0" expanded="false" />
-            <element signature="e#1100#1222#0" expanded="false" />
-            <element signature="e#1307#1807#0" expanded="false" />
-            <element signature="e#1851#2103#0" expanded="false" />
-          </folding>
+        <state line="9" column="127" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/apiControllers/entries.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="10" selection-start="386" selection-end="386" vertical-scroll-proportion="0.42829457">
+        <state line="37" column="172" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.5261122">
           <folding />
         </state>
       </provider>

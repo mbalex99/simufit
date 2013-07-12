@@ -6,13 +6,15 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var entries = require('./../controllers/apiControllers/entries.js');
-var users  = require('./../controllers/apiControllers/users.js');
+//var entries = require('./../controllers/apiControllers/entries.js');
+//var users  = require('./../controllers/apiControllers/users.js');
 
 exports.registerApiRoutes = function(app){
 
-    app.get('/api/users', users.list);
+    /*app.get('/api/users', users.list);
     app.get('/api/users/:userId', users.single);
 
-    app.post('/api/users/:userId/entries', entries.newEntry)
+    app.post('/api/users/:userId/entries', entries.newEntry);
+    app.get('/api/users/:userId/entries', entries.listByUserId);
+    app.get('/api/entries/:entryId', entries.single); */
 };

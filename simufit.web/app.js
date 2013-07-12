@@ -15,6 +15,9 @@ var apiRouteConfig = require('./infrastructure/apiRouteConfig');
 var passportConfig = require('./infrastructure/passportConfig');
 var napConfig = require('./infrastructure/napConfig');
 var passport = require('passport');
+var mongoose = require('mongoose');
+var configuration = require('./configuration');
+var env = process.env.NODE_ENV || 'development';
 global.nap = require('nap');
 
 
@@ -44,6 +47,8 @@ app.configure(function(){
     napConfig.register(nap);
     routeConfig.registerViewRoutes(app, passport);
     apiRouteConfig.registerApiRoutes(app);
+
+    mongoose.connect(configuration.connectionString);
 });
 
 
