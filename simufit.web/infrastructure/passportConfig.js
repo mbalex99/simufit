@@ -16,17 +16,11 @@ exports.register = function(passport){
         callbackURL: configuration.facebookRedirectUri
     }, function(accessToken, refreshToken, profile, done){
 
-        userService.getUserByFacebookId(profile.id)
-            .then(function(user){
-                if(user == null){
-                    return userService.createUserByFacebookProfile(profile);
-                }else
-                {
-                    done(null, user);
-                }
-            }).then(function(user){
-                done(null, user);
-            })
+        userService.upsertUserByFacebookProfile(profile).then(function(user){
+           done(null, user);
+        }, function(error){
+            done(error);
+        });
     }));
     passport.serializeUser(function(user, done){
         done(null, user.facebookId);

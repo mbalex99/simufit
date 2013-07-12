@@ -11,37 +11,43 @@ var https = require('https');
 var flash = require('connect-flash');
 var fs = require('fs');
 var routeConfig = require('./infrastructure/routeConfig');
+var apiRouteConfig = require('./infrastructure/apiRouteConfig');
 var passportConfig = require('./infrastructure/passportConfig');
 var napConfig = require('./infrastructure/napConfig');
 var passport = require('passport');
-var io = require('socket.io');
 global.nap = require('nap');
 
 
 var app = express();
 
-app.set('port', 3000);
-app.set('views', path.join( __dirname, '/views') ); // critical to use path.join on windows
-app.set('view engine', 'jade');
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.cookieParser());
-app.use(express.bodyParser());
-app.use(express.session({ secret: 'keyboard cat' }));
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(express.methodOverride());
-app.use(flash());
-app.use(app.router);
-app.use("/partials", express.static(path.join(__dirname + '/partials')));
-app.use("/webapp", express.static(path.join(__dirname + '/webapp')));
-app.use(express.static(path.join(__dirname + '/public')));
 
-//register routes
-passportConfig.register(passport);
-napConfig.register(nap);
-routeConfig.registerViewRoutes(app, passport);
-routeConfig.registerApiRoutes(app);
+app.configure(function(){
+    app.set('port', 3000);
+    app.set('views', path.join( __dirname, '/views') ); // critical to use path.join on windows
+    app.set('view engine', 'jade');
+    app.use(express.favicon());
+    app.use(express.logger());
+    app.use(express.cookieParser());
+    app.use(express.bodyParser());
+    app.use(express.session({ secret: 'keyboard cat' }));
+    app.use(passport.initialize());
+    app.use(passport.session());
+    app.use(express.methodOverride());
+    app.use(flash());
+    app.use(app.router);
+    app.use("/partials", express.static(path.join(__dirname + '/partials')));
+    app.use("/webapp", express.static(path.join(__dirname + '/webapp')));
+    app.use(express.static(path.join(__dirname + '/public')));
+
+    //register routes
+    passportConfig.register(passport);
+    napConfig.register(nap);
+    routeConfig.registerViewRoutes(app, passport);
+    apiRouteConfig.registerApiRoutes(app);
+});
+
+
+
 
 
 //SSL
@@ -53,5 +59,4 @@ var server = https.createServer(options, app).listen(app.get('port'), function()
     console.log("Express server listening on port " + app.get('port'));
 });
 
-io.listen(server);
 module.exports = app;
