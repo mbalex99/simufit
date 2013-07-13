@@ -17,6 +17,7 @@ var napConfig = require('./infrastructure/napConfig');
 var passport = require('passport');
 var mongoose = require('mongoose');
 var configuration = require('./configuration');
+var oauth2 = require('./infrastructure/oauth2server');
 var env = process.env.NODE_ENV || 'development';
 global.nap = require('nap');
 
@@ -43,12 +44,13 @@ app.configure(function(){
     app.use(express.static(path.join(__dirname + '/public')));
 
     //register routes
-    passportConfig.register(passport);
+    //passportConfig.register(passport);
     napConfig.register(nap);
     routeConfig.registerViewRoutes(app, passport);
     apiRouteConfig.registerApiRoutes(app);
 
     mongoose.connect(configuration.connectionString);
+    oauth2(app);
 });
 
 

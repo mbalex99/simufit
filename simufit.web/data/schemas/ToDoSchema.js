@@ -7,7 +7,7 @@
  */
 var mongoose = require('mongoose');
 
-var ToDo = new mongoose.Schema({
+var ToDoSchema = new mongoose.Schema({
    title: String,
    description: String,
    isDone :{
@@ -16,4 +16,4 @@ var ToDo = new mongoose.Schema({
    }
 });
 
-module.exports = ToDo;
+module.exports = ToDoSchema;

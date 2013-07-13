@@ -8,7 +8,7 @@
 
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var ToDoSchema = require('./toDo');
+var ToDoSchema = require('./ToDoSchema');
 
 var EntrySchema = new Schema({
     userId: {

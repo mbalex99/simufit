@@ -19,7 +19,7 @@ module.exports = function (app) {
     var AuthorizationCode = require('./../data/models/AuthorizationCode');
     var AccessToken = require('./../data/models/AccessToken');
     var Client = require('./../data/models/Client');
-    var User = require('./../data/models/user');
+    var User = require('./../data/models/User');
 
     function ensureLoggedIn() {
         return function (request, response, next) {
@@ -110,6 +110,20 @@ module.exports = function (app) {
             });
 
     }));
+
+    passport.serializeUser(function (user, done) {
+        done(null, user._id);
+    });
+
+    passport.deserializeUser(function (id, done) {
+        User.findById(id, function (err, user) {
+            if (user) {
+                done(null, user);
+            } else {
+                done('deserializeUserError');
+            }
+        });
+    });
 
 
     passport.use(new BearerStrategy(

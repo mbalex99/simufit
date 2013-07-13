@@ -9,13 +9,17 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var ClientSchema = new Schema({
-    redirectURI: {
+    redirectUri: {
         type: String,
         required: true
     },
     name: {
         type: String,
         required: true
+    },
+    userId:{
+        type: Schema.ObjectId,
+        ref: 'User'
     },
     description: String,
     secret: {

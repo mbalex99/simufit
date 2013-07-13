@@ -10,23 +10,20 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var AccessTokenSchema = new Schema({
-    token: {
-        type: String,
-        required: true
+    token: String,
+    userId:{
+        type: Schema.ObjectId,
+        ref: 'User'
     },
-    secret:{
-        type: String,
-        clientId: {
-            type: Schema.Types.ObjectId,
-            ref: "Client"
-        },
-        userId: {
-            type: Schema.Types.ObjectId,
-            ref: "User"
-        },
-        expires:{
-            type: Date
-        }
+    clientId:{
+        type: Schema.ObjectId,
+        ref: 'Client'
+    },
+    expires:{
+        type: Number
+    },
+    scope:{
+        type: String
     }
 });
 

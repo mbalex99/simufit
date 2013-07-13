@@ -21,16 +21,14 @@ var AuthorizationCodeSchema = new Schema({
     },
     userId: {
         type: Schema.Types.ObjectId,
-        ref: 'User',
-        required: true
+        ref: 'User'
     },
     redirectUri:{
         type: String,
         require: true
     },
     expires:{
-        type: Schema.Types.Date,
-        required: true
+        type: Number
     }
 });
 
