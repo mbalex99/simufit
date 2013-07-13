@@ -10,29 +10,7 @@ var configuration = require('./../configuration');
 var User = require('./../data/models/user');
 
 exports.register = function (passport) {
-    passport.use(new FacebookStrategy({
-        clientID: configuration.facebookAppId,
-        clientSecret: configuration.facebookAppSecret,
-        callbackURL: configuration.facebookRedirectUri
-    }, function (accessToken, refreshToken, profile, done) {
 
-        User.findOneAndUpdate({facebookId: profile.id},
-            {
-                facebookId: profile.id,
-                facebookAccessToken: accessToken,
-                firstName: profile.name.givenName,
-                lastName: profile.name.familyName,
-                email: profile.emails[0].value
-            }
-            ,
-            {upsert: true}, function(err, user){
-                if(err){
-                    done(err);
-                }
-                done(null, user);
-            });
-
-    }));
     passport.serializeUser(function (user, done) {
         done(null, user._id);
     });

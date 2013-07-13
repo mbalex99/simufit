@@ -5,6 +5,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/infrastructure/utils.js" />
       <change type="MOVED" beforePath="C:\simufit\simufit.web\data\schemas\authorizationCodeSchema.js" afterPath="$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/oauth2server.js" afterPath="$PROJECT_DIR$/infrastructure/oauth2server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/passportConfig.js" afterPath="$PROJECT_DIR$/infrastructure/passportConfig.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simufit.web.iws" />
@@ -75,7 +76,7 @@
     <file path="/authorizationCode.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373741047277" ignored="false" />
     <file path="/client.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373741444779" ignored="false" />
     <file path="/accessToken.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373741459477" ignored="false" />
-    <file path="/oauth2server.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373743474769" ignored="false" />
+    <file path="/oauth2server.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373745226429" ignored="false" />
     <file path="/AuthorizationCodeSchema.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373743023776" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,10 +100,19 @@
       <file leaf-file-name="oauth2server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/infrastructure/oauth2server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="7" selection-start="435" selection-end="435" vertical-scroll-proportion="0.31850117">
+            <state line="14" column="66" selection-start="453" selection-end="453" vertical-scroll-proportion="0.31850117">
               <folding>
                 <element signature="e#0#162#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passportConfig.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/passportConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="4" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,21 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthorizationCode.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/models/AuthorizationCode.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="75" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#162#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AuthorizationCodeSchema.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="6" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+            <state line="33" column="7" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#162#0" expanded="false" />
               </folding>
@@ -156,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/controllers/apiControllers/usersController.js" />
         <option value="$PROJECT_DIR$/controllers/viewControllers/homeController.js" />
         <option value="$PROJECT_DIR$/infrastructure/routeConfig.js" />
         <option value="$PROJECT_DIR$/app.js" />
@@ -171,6 +169,7 @@
         <option value="$PROJECT_DIR$/data/models/user.js" />
         <option value="$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js" />
         <option value="$PROJECT_DIR$/infrastructure/utils.js" />
+        <option value="$PROJECT_DIR$/infrastructure/passportConfig.js" />
         <option value="$PROJECT_DIR$/infrastructure/oauth2server.js" />
       </list>
     </option>
@@ -503,13 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/passportConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/routeConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="30" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
@@ -589,7 +581,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/models/AuthorizationCode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="75" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+        <state line="9" column="75" selection-start="275" selection-end="275" vertical-scroll-proportion="0.11943794">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/passportConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="7" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#162#0" expanded="false" />
           </folding>
@@ -603,18 +611,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="6" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#162#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/oauth2server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="435" selection-end="435" vertical-scroll-proportion="0.31850117">
+        <state line="14" column="66" selection-start="453" selection-end="453" vertical-scroll-proportion="0.31850117">
           <folding>
             <element signature="e#0#162#0" expanded="false" />
           </folding>
