@@ -7,5 +7,5 @@
  */
 
 exports.index = function(req, res){
-    res.render('splash');
+    res.render('web-app');
 };
