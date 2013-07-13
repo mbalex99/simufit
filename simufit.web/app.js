@@ -28,7 +28,7 @@ var app = express();
 app.configure(function(){
     app.set('port', 3000);
     app.set('views', path.join( __dirname, '/views') ); // critical to use path.join on windows
-    app.set('view engine', 'jade');
+    app.set('view engine', 'ejs');
     app.use(express.favicon());
     app.use(express.logger());
     app.use(express.cookieParser());
