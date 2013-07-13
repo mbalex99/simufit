@@ -7,12 +7,13 @@
  */
 
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 var ToDoSchema = require('./toDo');
 
-var EntrySchema = new mongoose.Schema({
+var EntrySchema = new Schema({
     userId: {
         type: Schema.Types.ObjectId,
-        ref: 'UserSchema'
+        ref: 'User'
     },
     title: String,
     description: String,
@@ -21,4 +22,5 @@ var EntrySchema = new mongoose.Schema({
     toDos: [ToDoSchema]
 });
 
-mongoose.model('Entry', EntrySchema);
+
+module.exports = EntrySchema;

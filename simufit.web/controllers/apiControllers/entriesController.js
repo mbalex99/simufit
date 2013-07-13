@@ -7,12 +7,29 @@
  */
 
 
-var entries = require('./../../data/models/entry');
-var user
+var Entry = require('./../../data/models/entry');
+var User = require('./../../data/models/user');
+var q = require('q');
 
+
+exports.list = function(request, response){
+
+};
+
+
+exports.single = function(request, response){
+
+};
 
 //POST users/:userId/entries
 exports.addToUser = function(request, response){
+    var userId = request.params.userId;
+
+    User.findById(userId, function(err, user){
+        if(err){
+
+        }
+    });
 
 };
 

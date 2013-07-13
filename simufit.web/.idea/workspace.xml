@@ -2,16 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b56be73c-1143-42cd-b805-48276c606e69" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\simufit\simufit.web\controllers\viewControllers\splash.js" afterPath="$PROJECT_DIR$/controllers/viewControllers/webAppController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/public/js/angular.js" afterPath="$PROJECT_DIR$/public/assets/public/js/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/public/js/bootstrap.js" afterPath="$PROJECT_DIR$/public/assets/public/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/public/js/jquery.js" afterPath="$PROJECT_DIR$/public/assets/public/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/schemas/AccessTokenSchema.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/schemas/ClientSchema.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/models/accessToken.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/models/authorizationCode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/models/client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/infrastructure/oauth2server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/apiControllers/usersController.js" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\css\fullcalendar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\css\style-flat.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\css\style-simufit.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\css\uniform.default.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\js\angular.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\js\fullcalendar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\js\jquery-migrate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\js\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\js\jquery.uniform.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\js\lodash.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\public\js\modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\webApp\appConfig\webApp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\webApp\controllers\DashboardCtrl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\webApp\directives\calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\webApp\directives\clickToEdit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\webApp\directives\measurementsEditor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\webApp\directives\sidebar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\webApp\directives\sortable.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\webApp\directives\titleEdit.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\webApp\directives\toDoEditor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\simufit\simufit.web\public\assets\webApp\directives\uniformCheckbox.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\simufit\simufit.web\data\schemas\entry.js" afterPath="$PROJECT_DIR$/data/schemas/EntrySchema.js" />
+      <change type="MOVED" beforePath="C:\simufit\simufit.web\data\schemas\toDo.js" afterPath="$PROJECT_DIR$/data/schemas/ToDoSchema.js" />
+      <change type="MOVED" beforePath="C:\simufit\simufit.web\data\schemas\user.js" afterPath="$PROJECT_DIR$/data/schemas/UserSchema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/apiRouteConfig.js" afterPath="$PROJECT_DIR$/infrastructure/apiRouteConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/apiControllers/entriesController.js" afterPath="$PROJECT_DIR$/controllers/apiControllers/entriesController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/models/entry.js" afterPath="$PROJECT_DIR$/data/models/entry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/viewControllers/homeController.js" afterPath="$PROJECT_DIR$/controllers/viewControllers/homeController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/routeConfig.js" afterPath="$PROJECT_DIR$/infrastructure/routeConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/models/user.js" afterPath="$PROJECT_DIR$/data/models/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simufit.web.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/app.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373662264173" ignored="false" />
     <file path="/web.config" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372135074036" ignored="false" />
-    <file path="/routeConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373701028910" ignored="false" />
+    <file path="/routeConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373733291317" ignored="false" />
     <file path="/imageTypes.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372290111036" ignored="false" />
     <file path="/appConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372299009880" ignored="false" />
     <file path="/dbClient.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372266050454" ignored="false" />
@@ -24,7 +61,7 @@
     <file path="/dbFactory.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373655427930" ignored="false" />
     <file path="/readme.md" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372363721320" ignored="false" />
     <file path="/index.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372363818229" ignored="false" />
-    <file path="/Dummy.txt" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373692587845" ignored="false" />
+    <file path="/Dummy.txt" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373732693767" ignored="false" />
     <file path="/index.bliss" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372367603550" ignored="false" />
     <file path="/home.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372367249520" ignored="false" />
     <file path="/index.vash" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1372827395500" ignored="false" />
@@ -60,15 +97,21 @@
     <file path="/home.jade" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373580555102" ignored="false" />
     <file path="/splash.jade" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373583093390" ignored="false" />
     <file path="$PROJECT_DIR$/public/assets/public/css/style-flat.css" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373584578700" ignored="false" />
-    <file path="/entry.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373700293032" ignored="false" />
+    <file path="/entry.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373734405099" ignored="false" />
     <file path="/event.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373589344440" ignored="false" />
-    <file path="/apiRouteConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373604563048" ignored="false" />
+    <file path="/apiRouteConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373733346065" ignored="false" />
     <file path="/users.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373658673240" ignored="false" />
     <file path="/entries.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373604498957" ignored="false" />
     <file path="/entryService.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373604899560" ignored="false" />
     <file path="/user.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373660115245" ignored="false" />
     <file path="/toDo.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373646926162" ignored="false" />
-    <file path="/entriesController.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373700692981" ignored="false" />
+    <file path="/entriesController.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373701363588" ignored="false" />
+    <file path="/usersController.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373735103375" ignored="false" />
+    <file path="/a.dummy" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373733310658" ignored="false" />
+    <file path="/oauth2orizeConfig.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373740071279" ignored="false" />
+    <file path="/authorizationCode.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373741047277" ignored="false" />
+    <file path="/client.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373741444779" ignored="false" />
+    <file path="/accessToken.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373741459477" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +131,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="webAppController.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/viewControllers/webAppController.js">
+      <file leaf-file-name="client.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/models/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="223" selection-end="223" vertical-scroll-proportion="0.2959381">
-              <folding />
+            <state line="9" column="53" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#162#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entry.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/models/entry.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="51" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#162#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/models/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="49" selection-start="250" selection-end="250" vertical-scroll-proportion="0.11943794">
+              <folding>
+                <element signature="e#0#163#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accessToken.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/models/accessToken.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="63" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#162#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,30 +193,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/data/schemas/Entry.js" />
-        <option value="$PROJECT_DIR$/data/schemas/ToDo.js" />
         <option value="$PROJECT_DIR$/data/schemas/entry.js" />
-        <option value="$PROJECT_DIR$/data/schemas/toDo.js" />
-        <option value="$PROJECT_DIR$/data/dbFactory.js" />
-        <option value="$PROJECT_DIR$/controllers/apiControllers/users.js" />
         <option value="$PROJECT_DIR$/infrastructure/apiRouteConfig.js" />
-        <option value="$PROJECT_DIR$/data/models/user.js" />
-        <option value="$PROJECT_DIR$/data/schemas/user.js" />
-        <option value="$PROJECT_DIR$/configuration.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/infrastructure/passportConfig.js" />
-        <option value="$PROJECT_DIR$/data/models/entry.js" />
-        <option value="$PROJECT_DIR$/controllers/apiControllers/entriesController.js" />
+        <option value="$PROJECT_DIR$/controllers/apiControllers/usersController.js" />
+        <option value="$PROJECT_DIR$/controllers/viewControllers/homeController.js" />
         <option value="$PROJECT_DIR$/infrastructure/routeConfig.js" />
-        <option value="$PROJECT_DIR$/controllers/viewControllers/webAppController.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/infrastructure/oauth2orizeConfig.js" />
+        <option value="$PROJECT_DIR$/infrastructure/oauth2server.js" />
+        <option value="$PROJECT_DIR$/data/schemas/authorizationCode.js" />
+        <option value="$PROJECT_DIR$/data/schemas/client.js" />
+        <option value="$PROJECT_DIR$/data/schemas/accessToken.js" />
+        <option value="$PROJECT_DIR$/data/models/accessToken.js" />
+        <option value="$PROJECT_DIR$/data/models/authorizationCode.js" />
+        <option value="$PROJECT_DIR$/data/models/client.js" />
+        <option value="$PROJECT_DIR$/data/models/entry.js" />
+        <option value="$PROJECT_DIR$/data/models/user.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -209,7 +287,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schemas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,39 +305,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simufit.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simufit.web" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="viewControllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simufit.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simufit.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -266,14 +320,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -365,17 +419,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15709014" sideWeight="0.6046771" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39532295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19150285" sideWeight="0.63268155" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39532295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29398665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36731842" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -462,60 +516,28 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="47" />
+      <option name="time" value="48" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/infrastructure/apiRouteConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="56" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
+        <state line="14" column="4" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.js">
+    <entry file="file://$PROJECT_DIR$/controllers/viewControllers/homeController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="127" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+        <state line="10" column="18" selection-start="219" selection-end="219" vertical-scroll-proportion="0.39719626">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/napConfig.js">
+    <entry file="file://$PROJECT_DIR$/controllers/viewControllers/webAppController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="243" selection-end="243" vertical-scroll-proportion="0.34343433">
+        <state line="10" column="2" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="127" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="36" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/schemas/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="420" selection-end="420" vertical-scroll-proportion="0.39458415">
-          <folding>
-            <element signature="e#0#163#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/schemas/toDo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="275" selection-end="275" vertical-scroll-proportion="0.16441005">
-          <folding>
-            <element signature="e#0#163#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,67 +548,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/apiRouteConfig.js">
+    <entry file="file://$PROJECT_DIR$/infrastructure/routeConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="56" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
+        <state line="9" column="30" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/models/user.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="165" selection-end="319" vertical-scroll-proportion="0.065764025">
+        <state line="40" column="21" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/oauth2server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/schemas/EntrySchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="12" selection-start="311" selection-end="375" vertical-scroll-proportion="0.17246377">
           <folding>
             <element signature="e#0#163#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/schemas/entry.js">
+    <entry file="file://$PROJECT_DIR$/data/schemas/ClientSchema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="361" selection-end="361" vertical-scroll-proportion="0.2959381">
+        <state line="17" column="24" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#163#0" expanded="false" />
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="5" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/schemas/AccessTokenSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="35" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/models/authorizationCode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="75" selection-start="275" selection-end="275" vertical-scroll-proportion="0.11943794">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/models/accessToken.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="63" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/models/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="53" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/models/entry.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="324" selection-end="324" vertical-scroll-proportion="0.23017408">
+        <state line="9" column="51" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#162#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/apiControllers/entriesController.js">
+    <entry file="file://$PROJECT_DIR$/data/models/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="0.2959381">
+        <state line="9" column="49" selection-start="250" selection-end="250" vertical-scroll-proportion="0.11943794">
           <folding>
-            <element signature="e#0#162#0" expanded="false" />
+            <element signature="e#0#163#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/viewControllers/homeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="181" selection-end="181" vertical-scroll-proportion="0.2959381">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/routeConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="632" selection-end="632" vertical-scroll-proportion="0.5589942">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/viewControllers/webAppController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="223" selection-end="223" vertical-scroll-proportion="0.2959381">
-          <folding />
         </state>
       </provider>
     </entry>

@@ -38,7 +38,7 @@ app.configure(function(){
     app.use(express.methodOverride());
     app.use(flash());
     app.use(app.router);
-    app.use("/partials", express.static(path.join(__dirname + '/partials')));
+    app.use("/webapp/partials", express.static(path.join(__dirname + '/partials')));
     app.use("/webapp", express.static(path.join(__dirname + '/webapp')));
     app.use(express.static(path.join(__dirname + '/public')));
 
