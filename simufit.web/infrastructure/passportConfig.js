@@ -16,30 +16,29 @@ exports.register = function (passport) {
         callbackURL: configuration.facebookRedirectUri
     }, function (accessToken, refreshToken, profile, done) {
 
-        User.update({facebookId: profile.id},
-            {$set:
-                {
-                    facebookId: profile.id,
-                    facebookAccessToken: accessToken,
-                    firstName: profile.name.givenName,
-                    lastName: profile.name.familyName,
-                    email: profile.emails[0].value
-                }
-            },
+        User.findOneAndUpdate({facebookId: profile.id},
+            {
+                facebookId: profile.id,
+                facebookAccessToken: accessToken,
+                firstName: profile.name.givenName,
+                lastName: profile.name.familyName,
+                email: profile.emails[0].value
+            }
+            ,
             {upsert: true}, function(err, user){
                 if(err){
-                    return done(err)
+                    done(err);
                 }
                 done(null, user);
             });
 
     }));
     passport.serializeUser(function (user, done) {
-        done(null, user.facebookId);
+        done(null, user._id);
     });
 
     passport.deserializeUser(function (id, done) {
-        userService.getUserByFacebookId(id).then(function (user) {
+        User.findById(id, function (err, user) {
             if (user) {
                 done(null, user);
             } else {
