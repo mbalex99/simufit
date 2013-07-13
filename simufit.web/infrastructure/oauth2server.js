@@ -21,9 +21,9 @@ module.exports = function (app) {
     var Client = require('./../data/models/Client');
     var User = require('./../data/models/user');
 
-    function ensureLoggedIn(){
-        return function(request, response, next){
-            if(!req.session.user || !req.session.user.id){
+    function ensureLoggedIn() {
+        return function (request, response, next) {
+            if (!req.session.user || !req.session.user.id) {
                 return res.redirect('/');
             }
             next();
@@ -64,14 +64,14 @@ module.exports = function (app) {
     }));
 
 
-    oauth2.exchange(oauth2orize.exchange.code(function(client, code, redirectURI, done){
-        AuthorizationCode.findOne({code: code}, function(err, code){
-            if(err) return done(err);
-            if(client._id.toString() !== code.clientId.toString()) return done(null, false);
-            if(redirectURI !== code.redirectUri) return done(null, false);
+    oauth2.exchange(oauth2orize.exchange.code(function (client, code, redirectURI, done) {
+        AuthorizationCode.findOne({code: code}, function (err, code) {
+            if (err) return done(err);
+            if (client._id.toString() !== code.clientId.toString()) return done(null, false);
+            if (redirectURI !== code.redirectUri) return done(null, false);
 
             var now = new Date().getTime();
-            var token = crypto.createHmac('sha1', 'access_token').update([client._id, now],join()).digest('hex');
+            var token = crypto.createHmac('sha1', 'access_token').update([client._id, now], join()).digest('hex');
 
             var accessToken = AccessToken({
                 token: token,
@@ -80,8 +80,8 @@ module.exports = function (app) {
                 scope: code.scope
             });
 
-            accessToken.save(function(err){
-                if(err) return done(err);
+            accessToken.save(function (err) {
+                if (err) return done(err);
                 return done(null, token);
             });
         })
@@ -102,8 +102,8 @@ module.exports = function (app) {
                 email: profile.emails[0].value
             }
             ,
-            {upsert: true}, function(err, user){
-                if(err){
+            {upsert: true}, function (err, user) {
+                if (err) {
                     done(err);
                 }
                 done(null, user);
@@ -112,6 +112,47 @@ module.exports = function (app) {
     }));
 
 
+    passport.use(new BearerStrategy(
+        function (accessToken, done) {
+            AccessToken.findOne({token: accessToken}, function (err, token) {
+                if (err) {
+                    return done(err);
+                }
+                if (!token) {
+                    return done(null, false);
+                }
+
+                User.findById(token.userId, function (err, user) {
+                    if (err) return done(err);
+                    if (!user) return done(null, false);
+
+                    var info = {scope: '*'};
+                    done(null, user, info);
+                });
+            });
+        }
+    ));
+
+
+    app.get('/authorize', ensureLoggedIn(),
+        oauth2.authorization(function (clientId, redirectURI, done) {
+            Client.findById(clientId, function (err, client) {
+                if (err) return done(err);
+                if (!client) return done(null, false);
+                return done(null, client, client.userId);
+            });
+        }),
+        function (req, res) {
+            res.json({
+                transactionId: req.oauth2.transactionId,
+                user: req.user,
+                client: req.oauth2.client
+            });
+        });
+
+    app.post('/authorize/decision', ensureLoggedIn(), oauth2.decision());
+
+    app.post('/token', passport.authenticate('facebook'), oauth2.token(), oauth2.errorHandler());
 
 };
 

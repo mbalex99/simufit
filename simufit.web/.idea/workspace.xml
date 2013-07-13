@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b56be73c-1143-42cd-b805-48276c606e69" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/infrastructure/utils.js" />
-      <change type="MOVED" beforePath="C:\simufit\simufit.web\data\schemas\authorizationCodeSchema.js" afterPath="$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/oauth2server.js" afterPath="$PROJECT_DIR$/infrastructure/oauth2server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/passportConfig.js" afterPath="$PROJECT_DIR$/infrastructure/passportConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simufit.web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,7 +72,7 @@
     <file path="/authorizationCode.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373741047277" ignored="false" />
     <file path="/client.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373741444779" ignored="false" />
     <file path="/accessToken.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373741459477" ignored="false" />
-    <file path="/oauth2server.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373745226429" ignored="false" />
+    <file path="/oauth2server.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373746094392" ignored="false" />
     <file path="/AuthorizationCodeSchema.js" changelist="b56be73c-1143-42cd-b805-48276c606e69" time="1373743023776" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +96,7 @@
       <file leaf-file-name="oauth2server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/infrastructure/oauth2server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="66" selection-start="453" selection-end="453" vertical-scroll-proportion="0.31850117">
+            <state line="123" column="0" selection-start="3956" selection-end="3956" vertical-scroll-proportion="4.6580796">
               <folding>
                 <element signature="e#0#162#0" expanded="false" />
               </folding>
@@ -108,10 +104,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="routeConfig.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/routeConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="30" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="passportConfig.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/infrastructure/passportConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="4" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,7 +134,7 @@
       <file leaf-file-name="AuthorizationCodeSchema.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="7" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
+            <state line="33" column="5" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#162#0" expanded="false" />
               </folding>
@@ -264,6 +269,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simufit.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simufit.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/routeConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="21" selection-start="1339" selection-end="1339" vertical-scroll-proportion="0.0">
@@ -543,7 +559,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/models/accessToken.js">
+    <entry file="file://$PROJECT_DIR$/data/models/AccessToken.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="63" selection-start="263" selection-end="263" vertical-scroll-proportion="0.11943794">
           <folding>
@@ -552,7 +568,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/models/user.js">
+    <entry file="file://$PROJECT_DIR$/data/models/User.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="49" selection-start="250" selection-end="250" vertical-scroll-proportion="0.11943794">
           <folding>
@@ -561,7 +577,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/models/entry.js">
+    <entry file="file://$PROJECT_DIR$/data/models/Entry.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="51" selection-start="251" selection-end="251" vertical-scroll-proportion="0.11943794">
           <folding>
@@ -570,7 +586,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/models/client.js">
+    <entry file="file://$PROJECT_DIR$/data/models/Client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="53" selection-start="253" selection-end="253" vertical-scroll-proportion="0.11943794">
           <folding>
@@ -588,22 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/passportConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="7" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#162#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -611,9 +611,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/schemas/AuthorizationCodeSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="5" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/passportConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/routeConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="30" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/oauth2server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="66" selection-start="453" selection-end="453" vertical-scroll-proportion="0.31850117">
+        <state line="123" column="0" selection-start="3956" selection-end="3956" vertical-scroll-proportion="4.6580796">
           <folding>
             <element signature="e#0#162#0" expanded="false" />
           </folding>
