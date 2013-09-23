@@ -1,1 +1,0 @@
-This directory is used to host all the JSON Api controller modules.
