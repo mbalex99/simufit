@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Simufit.Domain.Entities
 {
-    public class User
+    public class User:MongoEntity
     {
-
+        public string FacebookId { get; set; }
     }
 }

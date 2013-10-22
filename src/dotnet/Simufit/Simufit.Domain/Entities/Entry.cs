@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace Simufit.Domain.Entities
 {
-    public class Entry
+    public class Entry:MongoEntity
     {
+        public Entry()
+        {
+            Gigs = new List<Gig>();
+            Measurements = new List<Measurement>();
+        }
+
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime StartDateTime { get; set; }
         public DateTime? EndDateTime { get; set; }
-        public ICollection<Gig> Gigs { get; set; }
-        public ICollection<Measurement> Measurements { get; set; } 
+        public List<Gig> Gigs { get; set; }
+        public List<Measurement> Measurements { get; set; } 
     }
 }
