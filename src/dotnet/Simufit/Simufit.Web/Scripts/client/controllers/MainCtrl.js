@@ -2,7 +2,7 @@
 
 Application.Controllers.controller('MainCtrl', ['$scope', '$rootScope', 'facebookService', function ($scope, $rootScope, facebookService) {
     
-    facebookService.login(function (response) {
+    FB.login(function (response) {
         if (response.authResponse) {
             console.log('Welcome!  Fetching your information.... ');
             FB.api('/me', function (response) {
