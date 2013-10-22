@@ -35,7 +35,7 @@ Application.Directives.directive('fb', ['facebookService', function($FB) {
                             fjs.parentNode.insertBefore(js, fjs);
                         }(document, 'script', 'facebook-jssdk', fbAppId));
                     }
-                }
+                };
             }
         };
     }]);
