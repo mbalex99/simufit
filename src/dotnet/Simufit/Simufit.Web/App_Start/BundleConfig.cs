@@ -31,7 +31,10 @@ namespace Simufit.Web
 
             bundles.Add(new ScriptBundle("~/bundles/client")
                 .Include("~/Scripts/client/application.js")
-                .Include("~/Scripts/client/**/*.js.js"));
+                .Include("~/Scripts/client/controllers/*.js")
+                .Include("~/Scripts/client/directives/*.js")
+                .Include("~/Scripts/client/filters/*.js")
+                .Include("~/Scripts/client/services/*.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
