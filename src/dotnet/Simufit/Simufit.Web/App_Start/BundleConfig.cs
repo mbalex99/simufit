@@ -26,14 +26,24 @@ namespace Simufit.Web
             bundles.Add(new ScriptBundle("~/bundles/otherlibraries")
                 .Include("~/Scripts/bootstrap.js")
                 .Include("~/Scripts/moment.js")
-                .Include("~/Scripts/lodash.js"));
+                .Include("~/Scripts/lodash.js")
+                .Include("~/Scripts/jquery.signalR-2.0.0.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/client")
+                .Include("~/Scripts/client/application.js")
+                .Include("~/Scripts/client/**/*.js.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/styles").Include("~/Content/styles/*.css"));
+            bundles.Add(new StyleBundle("~/Content/styles")
+                .Include("~/Content/styles/bootstrap.css")
+                .Include("~/Content/styles/animate.css")
+                .Include("~/Content/styles/font.css")
+                .Include("~/Content/styles/plugin.css")
+                .Include("~/Content/styles/app.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
