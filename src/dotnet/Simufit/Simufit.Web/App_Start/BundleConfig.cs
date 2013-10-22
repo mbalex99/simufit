@@ -18,6 +18,14 @@ namespace Simufit.Web
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery.validate*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/angularjs")
+                .Include("~/Scripts/angular-*.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/otherlibraries")
+                .Include("~/Scripts/bootstrap.js")
+                .Include("~/Scripts/moment.js")
+                .Include("~/Scripts/lodash.js"));
+
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
