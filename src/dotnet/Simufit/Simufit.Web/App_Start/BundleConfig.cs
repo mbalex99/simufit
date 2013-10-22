@@ -19,7 +19,9 @@ namespace Simufit.Web
                         "~/Scripts/jquery.validate*"));
 
             bundles.Add(new ScriptBundle("~/bundles/angularjs")
-                .Include("~/Scripts/angular-*.js"));
+                .Include("~/Scripts/angular.js")
+                .Include("~/Scripts/angular-route.js")
+                .Include("~/Scripts/angular-touch.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/otherlibraries")
                 .Include("~/Scripts/bootstrap.js")
@@ -31,7 +33,7 @@ namespace Simufit.Web
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/styles").Include("~/Content/styles/*.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
