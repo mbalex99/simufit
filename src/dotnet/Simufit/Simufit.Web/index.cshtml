@@ -11,23 +11,23 @@
     @Styles.Render("~/Content/styles")
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css" />
 </head>
-    <body>
-        <fb app-id="@ConfigurationManager.AppSettings["FacebookAppId"]"></fb>
-        <section class="hbox stretch">
-            <aside class="bg-primary aside-sm" id="nav" ng-include="'partials/sidebar.html'" ng-controller="SidebarCtrl"></aside>
-            <div ng-view></div>
-        </section>
+<body>
+    <fb app-id="@ConfigurationManager.AppSettings["FacebookAppId"]"></fb>
+    <section class="hbox stretch">
+        <aside ng-include="'partials/sidebar.html'" class="bg-primary aside-sm" id="nav" ng-controller="SidebarCtrl"></aside>
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/jqueryui")
-        @Scripts.Render("~/bundles/angularjs")
-        @Scripts.Render("~/bundles/otherlibraries")
-        @Scripts.Render("~/bundles/client")
-        <script type="text/javascript">
-            Application.Constants.constant('configuration', {
-                facebookAppId: '@ConfigurationManager.AppSettings["FacebookAppId"]'
+        <div ng-view></div>
+    </section>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/angularjs")
+    @Scripts.Render("~/bundles/otherlibraries")
+    @Scripts.Render("~/bundles/client")
+    <script type="text/javascript">
+        Application.Constants.constant('configuration', {
+            facebookAppId: '@ConfigurationManager.AppSettings["FacebookAppId"]'
             });
-        </script>
-    
-    </body>
+    </script>
+</body>
 </html>

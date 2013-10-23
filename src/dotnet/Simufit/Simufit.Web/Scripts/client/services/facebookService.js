@@ -18,6 +18,10 @@
                 // Initialise FB SDK
                 window.FB.init(params);
 
+                window.FB.Event.subscribe('auth.statusChange', function(response) {
+                    $rootScope.$broadcast('auth.statusChange', response);
+                });
+
                 if (!$rootScope.$$phase) {
                     $rootScope.$apply();
                 }

@@ -1,16 +1,5 @@
 ﻿'use strict';
 
-Application.Controllers.controller('MainCtrl', ['$scope', '$rootScope', 'facebookService', function ($scope, $rootScope, facebookService) {
-    
-    FB.login(function (response) {
-        if (response.authResponse) {
-            console.log('Welcome!  Fetching your information.... ');
-            FB.api('/me', function (response) {
-                console.log('Good to see you, ' + response.name + '.');
-            });
-        } else {
-            console.log('User cancelled login or did not fully authorize.');
-        }
-    });
+Application.Controllers.controller('MainCtrl', ['$scope', '$rootScope', '$timeout', function ($scope, $rootScope, $timeout, facebookService) {
 
 }]);
