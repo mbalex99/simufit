@@ -49,9 +49,11 @@
   <ItemGroup>
     <Compile Include="Infrastructure\MongoDbConnectionHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Contracts\IEntryService.cs" />
     <Compile Include="Services\Contracts\IUserService.cs" />
     <Compile Include="Services\Implementations\EntityService.cs" />
     <Compile Include="Services\Contracts\IEntityService.cs" />
+    <Compile Include="Services\Implementations\EntryService.cs" />
     <Compile Include="Services\Implementations\UserService.cs" />
   </ItemGroup>
   <ItemGroup>

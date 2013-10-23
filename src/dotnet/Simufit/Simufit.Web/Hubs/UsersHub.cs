@@ -14,9 +14,9 @@ namespace Simufit.Web.Hubs
     {
         private readonly IUserService _userService;
 
-        public UsersHub()
+        public UsersHub(IUserService userService)
         {
-            _userService = new UserService();
+            _userService = userService;
         }
 
         public void GetClaims(string accessToken)

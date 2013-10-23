@@ -11,8 +11,7 @@ using Container = SimpleInjector.Container;
 
 namespace Simufit.Web.Infrastructure
 {
-    public sealed class SimpleInjectorResolver
-    : Microsoft.AspNet.SignalR.IDependencyResolver
+    public sealed class SimpleInjectorResolver : DefaultDependencyResolver
     {
         private Container container;
         private IServiceProvider provider;
@@ -44,20 +43,9 @@ namespace Simufit.Web.Infrastructure
         [DebuggerStepThrough]
         public IEnumerable<object> GetServices(Type serviceType)
         {
-            return this.container.GetAllInstances(serviceType);
+            return container.GetAllInstances(serviceType);
         }
 
-        public void Register(Type serviceType,
-            IEnumerable<Func<object>> activators)
-        {
-            throw new NotSupportedException();
-        }
-
-        public void Register(Type serviceType,
-            Func<object> activator)
-        {
-            throw new NotSupportedException();
-        }
 
         public void Dispose()
         {

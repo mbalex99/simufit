@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MongoDB.Bson;
 
 namespace Simufit.Domain.Entities
 {
@@ -14,7 +15,7 @@ namespace Simufit.Domain.Entities
             Measurements = new List<Measurement>();
         }
 
-        public User User { get; set; }
+        public ObjectId UserId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime StartDateTime { get; set; }
