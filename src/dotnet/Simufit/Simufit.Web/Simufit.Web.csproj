@@ -71,6 +71,9 @@
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleInjector">
+      <HintPath>..\packages\SimpleInjector.2.3.6\lib\net40-client\SimpleInjector.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -181,6 +184,7 @@
     <Compile Include="Hubs\UsersHub.cs" />
     <Compile Include="Infrastructure\FacebookHelper.cs" />
     <Compile Include="Infrastructure\SignalRContractResolver.cs" />
+    <Compile Include="Infrastructure\SimpleInjectorResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -541,6 +545,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Simufit.DataAccess\Simufit.DataAccess.csproj">
+      <Project>{169AE5F2-F990-4580-9068-E5845EB16F35}</Project>
+      <Name>Simufit.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simufit.Domain\Simufit.Domain.csproj">
+      <Project>{c65d3dda-2d21-4f45-93eb-268b817ac807}</Project>
+      <Name>Simufit.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

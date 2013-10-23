@@ -29,11 +29,13 @@ angular.module('application', ['application.filters', 'application.services', 'a
               console.log('connected');
               // the user is logged in and has authenticated your app
               $rootScope.accessToken = response.authResponse.accessToken;
-              hubProxy('usersHub').then(function (proxy) {
-                  proxy.invoke('getClaims', $rootScope.accessToken, function(claims) {
-                      console.log(claims);
+              var usersProxy = hubProxy('usersHub');
+              usersProxy.then(function (proxy) {
+                  proxy.invoke('getClaims', $rootScope.accessToken, function(user) {
+                      console.log(user);
                   });
               });
+              
               $location.path('/');
           } else {
               console.log('not authorized');
