@@ -20,6 +20,8 @@ namespace Simufit.Domain.Entities
         public string Description { get; set; }
         public DateTime StartDateTime { get; set; }
         public DateTime? EndDateTime { get; set; }
+        public string BackgroundColor { get; set; }
+        public string ForegroundColor { get; set; }
         public List<Gig> Gigs { get; set; }
         public List<Measurement> Measurements { get; set; } 
     }

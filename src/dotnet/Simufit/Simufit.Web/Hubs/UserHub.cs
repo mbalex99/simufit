@@ -10,13 +10,13 @@ using  Simufit.Domain.Entities;
 
 namespace Simufit.Web.Hubs
 {
-    public class UsersHub:Hub
+    public class UserHub:Hub
     {
         private readonly IUserService _userService;
 
-        public UsersHub(IUserService userService)
+        public UserHub()
         {
-            _userService = userService;
+            _userService = new UserService();
         }
 
         public void GetClaims(string accessToken)

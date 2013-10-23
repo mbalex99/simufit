@@ -10,6 +10,7 @@ using Microsoft.AspNet.SignalR;
 using Microsoft.AspNet.SignalR.Hubs;
 using Microsoft.Owin;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using Owin;
 using SimpleInjector;
 using Simufit.DataAccess.Services;
@@ -25,18 +26,8 @@ namespace Simufit.Web.App_Start
     {
         public void Configuration(IAppBuilder app)
         {
-            var container = new Container();
-            container.Register<IUserService, UserService>();
-            container.Register<IEntryService, EntryService>();
 
-            var resolver = new SimpleInjectorResolver(container);
-
-            var config = new HubConfiguration()
-            {
-                Resolver = resolver
-            };
-
-            app.MapSignalR(config);
+            app.MapSignalR();
         }
     }
 }

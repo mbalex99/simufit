@@ -21,14 +21,16 @@ namespace Simufit.Web.Infrastructure
             _assembly = typeof(Connection).Assembly;
         }
 
+        #region IContractResolver Members
+
         public JsonContract ResolveContract(Type type)
         {
             if (type.Assembly.Equals(_assembly))
-            {
                 return _defaultContractSerializer.ResolveContract(type);
-            }
 
             return _camelCaseContractResolver.ResolveContract(type);
         }
+
+        #endregion
     }
 }

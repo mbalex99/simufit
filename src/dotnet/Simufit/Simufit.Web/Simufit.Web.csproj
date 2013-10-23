@@ -175,13 +175,15 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IocConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Hubs\UsersHub.cs" />
+    <Compile Include="Hubs\EntryHub.cs" />
+    <Compile Include="Hubs\UserHub.cs" />
     <Compile Include="Infrastructure\FacebookHelper.cs" />
     <Compile Include="Infrastructure\SignalRContractResolver.cs" />
     <Compile Include="Infrastructure\SimpleInjectorResolver.cs" />
@@ -232,7 +234,6 @@
     <Content Include="Scripts\client\controllers\SidebarCtrl.js" />
     <Content Include="Scripts\client\directives\facebook.js" />
     <Content Include="Scripts\client\services\facebookService.js" />
-    <Content Include="Scripts\client\services\hubProxy.js" />
     <Content Include="Scripts\client\services\userService.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />

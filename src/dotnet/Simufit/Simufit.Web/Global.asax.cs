@@ -7,6 +7,9 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Microsoft.AspNet.SignalR;
+using Newtonsoft.Json;
+using Simufit.Web.App_Start;
+using Simufit.Web.Infrastructure;
 
 namespace Simufit.Web
 {
@@ -23,6 +26,16 @@ namespace Simufit.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            var container = IocConfig.Register();
+
+            // CAMEL CASING
+            var settings = new JsonSerializerSettings();
+            settings.ContractResolver = new SignalRContractResolver();
+            var serializer = JsonSerializer.Create(settings);
+            GlobalHost.DependencyResolver.Register(typeof(JsonSerializer), () => serializer);
+
+
+            
         }
     }
 }

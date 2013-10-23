@@ -12,34 +12,29 @@ using Container = SimpleInjector.Container;
 namespace Simufit.Web.Infrastructure
 {
     public sealed class SimpleInjectorResolver : DefaultDependencyResolver, IDependencyResolver
-{
-    private Container _container;
+    {
+        private Container _container;
 
-    public SimpleInjectorResolver(Container container)
-    {
-        _container = container;
-    }
-    public override object GetService(Type serviceType)
-    {
-        if (_container.GetRegistration(serviceType, false) != null)
+        public SimpleInjectorResolver(Container container)
         {
-            return _container.GetInstance(serviceType);
+            _container = container;
         }
-        else
+        public override object GetService(Type serviceType)
         {
+            if (_container.GetRegistration(serviceType, false) != null)
+            {
+                return _container.GetInstance(serviceType);
+            }
             return base.GetService(serviceType);
         }
-    }
-    public override IEnumerable<object> GetServices(Type serviceType)
-    {
-        if (_container.GetRegistration(serviceType, false) != null)
+
+        public override IEnumerable<object> GetServices(Type serviceType)
         {
-            return _container.GetAllInstances(serviceType);
-        }
-        else
-        {
+            if (_container.GetRegistration(serviceType, false) != null)
+            {
+                return _container.GetAllInstances(serviceType);
+            }
             return base.GetServices(serviceType);
         }
     }
-}
 }
