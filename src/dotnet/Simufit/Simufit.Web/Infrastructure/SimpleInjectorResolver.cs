@@ -11,45 +11,35 @@ using Container = SimpleInjector.Container;
 
 namespace Simufit.Web.Infrastructure
 {
-    public sealed class SimpleInjectorResolver : DefaultDependencyResolver
+    public sealed class SimpleInjectorResolver : DefaultDependencyResolver, IDependencyResolver
+{
+    private Container _container;
+
+    public SimpleInjectorResolver(Container container)
     {
-        private Container container;
-        private IServiceProvider provider;
-        private DefaultDependencyResolver defaultResolver;
-
-        public SimpleInjectorResolver(Container container)
+        _container = container;
+    }
+    public override object GetService(Type serviceType)
+    {
+        if (_container.GetRegistration(serviceType, false) != null)
         {
-            this.container = container;
-            this.provider = container;
-            this.defaultResolver =
-                new DefaultDependencyResolver();
+            return _container.GetInstance(serviceType);
         }
-
-        [DebuggerStepThrough]
-        public object GetService(Type serviceType)
+        else
         {
-            // Force the creation of hub implementation to go
-            // through Simple Injector without failing silently.
-            if (!serviceType.IsAbstract &&
-                typeof(IHub).IsAssignableFrom(serviceType))
-            {
-                return this.container.GetInstance(serviceType);
-            }
-
-            return this.provider.GetService(serviceType) ??
-                this.defaultResolver.GetService(serviceType);
-        }
-
-        [DebuggerStepThrough]
-        public IEnumerable<object> GetServices(Type serviceType)
-        {
-            return container.GetAllInstances(serviceType);
-        }
-
-
-        public void Dispose()
-        {
-            this.defaultResolver.Dispose();
+            return base.GetService(serviceType);
         }
     }
+    public override IEnumerable<object> GetServices(Type serviceType)
+    {
+        if (_container.GetRegistration(serviceType, false) != null)
+        {
+            return _container.GetAllInstances(serviceType);
+        }
+        else
+        {
+            return base.GetServices(serviceType);
+        }
+    }
+}
 }
