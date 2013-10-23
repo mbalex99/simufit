@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Formatting;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -24,17 +25,7 @@ namespace Simufit.Web.App_Start
     {
         public void Configuration(IAppBuilder app)
         {
-            
-            var settings = new JsonSerializerSettings();
-            settings.ContractResolver = new SignalRContractResolver();
-            var serializer = JsonSerializer.Create(settings);
-            GlobalHost.DependencyResolver.Register(typeof(JsonSerializer), () => serializer);
-
-
-            // 1. Create a new Simple Injector container
             var container = new Container();
-
-            // 2. Configure the container (register)
             container.Register<IUserService, UserService>();
             container.Register<IEntryService, EntryService>();
 
