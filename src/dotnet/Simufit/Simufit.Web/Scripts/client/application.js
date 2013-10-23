@@ -32,11 +32,9 @@ angular.module('application', ['application.filters', 'application.services', 'a
               userService.initialize().then(function (proxy) {
                   proxy.invoke('getClaims', $rootScope.accessToken);
               });
-              
               $location.path('/');
           } else {
-              console.log('not authorized');
-              // the user isn't logged in to Facebook.
+              console.log("the user isn't logged in to Facebook.");
               $location.path('/login');
           }
       });

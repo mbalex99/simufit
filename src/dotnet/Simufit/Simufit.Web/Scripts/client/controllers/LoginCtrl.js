@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-Application.Controllers.controller('LoginCtrl', ['$scope', '$rootScope', '$location' ,'facebookService', 'hubProxy', function ($scope, $rootScope, $location,  facebookService, hubProxy) {
+Application.Controllers.controller('LoginCtrl', ['$scope', '$rootScope', '$location' ,'facebookService', function ($scope, $rootScope, $location,  facebookService) {
     $scope.login = function() {
         facebookService.login(function (response) {
             if (response.authResponse) {

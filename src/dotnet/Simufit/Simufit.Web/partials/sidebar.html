@@ -9,8 +9,9 @@
         </a>
     </header>
     <section>
+        <div ng-show="isLoggedIn">
         <!-- user -->
-        <div class="bg-success nav-user hidden-xs pos-rlt">
+        <div class="bg-success nav-user hidden-xs pos-rlt" ng-show="{{isLoggedIn}}">
             <div class="nav-avatar pos-rlt">
                 <a href="#" class="thumb-sm avatar animated rollIn" data-toggle="dropdown">
                     <img ng-src="{{avatarUrl}}" alt="" class="">
@@ -23,6 +24,7 @@
             </div>
         </div>
         <!-- / user -->
+        </div>
         <!-- nav -->
         <nav class="nav-primary hidden-xs">
             <ul class="nav" ng-repeat="menuItem in menuItems">
@@ -37,7 +39,7 @@
         <!-- / nav -->
     </section>
     <footer class="footer bg-gradient hidden-xs">
-        <a ng-hide="hideLogoutButton" class="btn btn-sm btn-link m-r-n-xs pull-right" ng-click="logout()">
+        <a ng-hide="!isLoggedIn" class="btn btn-sm btn-link m-r-n-xs pull-right" ng-click="logout()">
             <i class="icon-off"></i>
         </a>
         <a href="#nav" data-toggle="class:nav-vertical" class="btn btn-sm btn-link m-l-n-sm">

@@ -27,7 +27,8 @@ namespace Simufit.Web
                 .Include("~/Scripts/bootstrap.js")
                 .Include("~/Scripts/moment.js")
                 .Include("~/Scripts/lodash.js")
-                .Include("~/Scripts/jquery.signalR-2.0.0.js"));
+                .Include("~/Scripts/jquery.signalR-2.0.0.js")
+                .Include("~/Scripts/fullcalendar.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/client")
                 .Include("~/Scripts/client/application.js")
@@ -46,7 +47,8 @@ namespace Simufit.Web
                 .Include("~/Content/styles/animate.css")
                 .Include("~/Content/styles/font.css")
                 .Include("~/Content/styles/plugin.css")
-                .Include("~/Content/styles/app.css"));
+                .Include("~/Content/styles/app.css")
+                .Include("~/Content/fullcalendar/fullcalendar.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

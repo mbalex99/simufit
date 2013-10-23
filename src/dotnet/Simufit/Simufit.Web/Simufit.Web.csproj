@@ -196,6 +196,7 @@
     <Content Include="Content\bootstrap\bootstrap.css" />
     <Content Include="Content\bootstrap\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fullcalendar\fullcalendar.css" />
     <Content Include="Content\styles\animate.css" />
     <Content Include="Content\styles\app.css" />
     <Content Include="Content\styles\bootstrap.css" />
@@ -232,6 +233,7 @@
     <Content Include="Scripts\client\controllers\LoginCtrl.js" />
     <Content Include="Scripts\client\controllers\MainCtrl.js" />
     <Content Include="Scripts\client\controllers\SidebarCtrl.js" />
+    <Content Include="Scripts\client\directives\calendar.js" />
     <Content Include="Scripts\client\directives\facebook.js" />
     <Content Include="Scripts\client\services\facebookService.js" />
     <Content Include="Scripts\client\services\userService.js" />
@@ -248,6 +250,7 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\fullcalendar.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
     <Content Include="Scripts\i18n\angular-locale_af.js" />
