@@ -1,9 +1,7 @@
 ﻿'use strict';
 
-Application.Controllers.controller('SidebarCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
+Application.Controllers.controller('SidebarCtrl', ['$scope', '$rootScope', 'facebookService', function ($scope, $rootScope, facebookService) {
     
-    
-
     $scope.$on('auth.statusChange', function (event, response) {
         if (response.status === 'connected') {
             $scope.menuItems = [{ title: "Discover", href: "#/", iconClass: "icon-eye-open" }, { title: "Friends", href: "#/friends", iconClass: "icon-group" }, { title: "Settings", href: "#/settings", iconClass: "icon-cog" }];
@@ -16,6 +14,12 @@ Application.Controllers.controller('SidebarCtrl', ['$scope', '$rootScope', funct
             $scope.$apply();
         }
     });
+
+    $scope.logout = function() {
+        facebookService.logout(function (response) {
+            $rootScope.accessToken = "";
+        });
+    };
 
     $scope.$on('gotClaims', function(event, user) {
         $scope.$apply(function() {
