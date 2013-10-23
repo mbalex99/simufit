@@ -2,7 +2,7 @@
 
 Application.Controllers.controller('SidebarCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
     
-    $scope.avatarUrl = "https://graph.facebook.com/max.alexander.9/picture?type=square";
+    
 
     $scope.$on('auth.statusChange', function (event, response) {
         if (response.status === 'connected') {
@@ -15,6 +15,13 @@ Application.Controllers.controller('SidebarCtrl', ['$scope', '$rootScope', funct
             $scope.hideLogoutButton = true;
             $scope.$apply();
         }
+    });
+
+    $scope.$on('gotClaims', function(event, user) {
+        $scope.$apply(function() {
+            $scope.avatarUrl = "https://graph.facebook.com/" + user.facebookId + "/picture?type=square";
+            $scope.firstName = user.firstName;
+        });
     });
 
 }]);

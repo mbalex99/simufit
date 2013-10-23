@@ -19,7 +19,7 @@ namespace Simufit.Web.Hubs
             _userService = new UserService();
         }
 
-        public User GetClaims(string accessToken)
+        public void GetClaims(string accessToken)
         {
             var client = new FacebookClient(accessToken);
 
@@ -28,12 +28,14 @@ namespace Simufit.Web.Hubs
             var user = new User()
             {
                 FacebookId = me.id,
+                FirstName = me.first_name,
+                LastName = me.last_name,
                 Role = Role.Normal
             };
 
             _userService.Upsert(user);
 
-            return user;
+            Clients.All.gotClaims(user);
         }
     }
 }

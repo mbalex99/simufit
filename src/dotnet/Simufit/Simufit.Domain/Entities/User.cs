@@ -10,6 +10,9 @@ namespace Simufit.Domain.Entities
 {
     public class User:MongoEntity
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
         public string FacebookId { get; set; }
         [BsonRepresentation(BsonType.String)]
         public Role Role { get; set; }

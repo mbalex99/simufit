@@ -233,6 +233,7 @@
     <Content Include="Scripts\client\directives\facebook.js" />
     <Content Include="Scripts\client\services\facebookService.js" />
     <Content Include="Scripts\client\services\hubProxy.js" />
+    <Content Include="Scripts\client\services\userService.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />
     <Content Include="Scripts\angular-sanitize.min.js.map" />

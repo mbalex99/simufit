@@ -1,5 +1,5 @@
 ﻿// Facebook SDK
-Application.Directives.directive('fb', ['facebookService', function($FB) {
+Application.Directives.directive('fb', ['facebookService', '$rootScope', function ($FB, $rootScope) {
         return {
             restrict: "E",
             replace: true,
@@ -12,7 +12,7 @@ Application.Directives.directive('fb', ['facebookService', function($FB) {
                         var fb_params = {
                             appId: iAttrs.appId || "",
                             cookie: iAttrs.cookie || true,
-                            status: iAttrs.status || true,
+                            status: iAttrs.status || false,
                             xfbml: iAttrs.xfbml || true
                         };
 
@@ -23,6 +23,10 @@ Application.Directives.directive('fb', ['facebookService', function($FB) {
                             if ('fbInit' in iAttrs) {
                                 iAttrs.fbInit();
                             }
+                            
+                            $FB.getLoginStatus(function(response) {
+                                $rootScope.$broadcast('auth.statusChange', response);
+                            });
                         };
 
                         (function(d, s, id, fbAppId) {

@@ -21,19 +21,16 @@ angular.module('application', ['application.filters', 'application.services', 'a
         when('/login', { templateUrl: 'partials/login.html', controller: 'LoginCtrl' }).
         when('/charts/', { templateUrl: 'partials/details-partial.html' }).
         otherwise({ templateUrl: 'partials/error.html' });
-  }]).run(['$rootScope', '$window', 'configuration', '$location', 'facebookService', 'hubProxy', function ($rootScope, $window, configuration, $location, facebookService, hubProxy) {
-
+      
+  }]).run(['$rootScope', '$window', 'configuration', '$location', 'facebookService', 'userService', function ($rootScope, $window, configuration, $location, facebookService, userService) {
 
       $rootScope.$on('auth.statusChange', function (event, response) {
           if (response.status === 'connected') {
               console.log('connected');
               // the user is logged in and has authenticated your app
               $rootScope.accessToken = response.authResponse.accessToken;
-              var usersProxy = hubProxy('usersHub');
-              usersProxy.then(function (proxy) {
-                  proxy.invoke('getClaims', $rootScope.accessToken, function(user) {
-                      console.log(user);
-                  });
+              userService.initialize().then(function (proxy) {
+                  proxy.invoke('getClaims', $rootScope.accessToken);
               });
               
               $location.path('/');
