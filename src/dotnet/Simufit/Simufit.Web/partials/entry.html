@@ -16,33 +16,16 @@
     <div class="panel-body">
         <div ng-show="activeTab == 'list'">
             <ul class="list-group list-group-sp">
-                <li class="list-group-item hover active" ng-repeat="gig in gigs">
-                    <div class="checkbox">
-                        <input class="toggle" type="checkbox" ng-model="gig.isDone">
-                        <input class="task-input task-name" type="text" ng-model="gig.title">
-                    </div>
-                </li>
+                <div ng-repeat="gig in entry.gigs">
+                    <task gig="gig" enter-key-pressed="enterKeyPressed($index)" remove="removeGig($index)"></task>
+                </div>
             </ul>
         </div>
         <div ng-show="activeTab == 'picture'">
-            <ul class="list-group list-group-sp">
-                <li class="list-group-item hover active" ng-repeat="gig in gigs">
-                    <div class="checkbox">
-                        <input class="toggle" type="checkbox" ng-model="gig.isDone">
-                        <input class="task-input task-name" type="text" ng-model="gig.title">
-                    </div>
-                </li>
-            </ul>
+            <h1>Picture</h1>
         </div>
         <div ng-show="activeTab == 'measure'">
-            <ul class="list-group list-group-sp">
-                <li class="list-group-item hover active" ng-repeat="gig in gigs">
-                    <div class="checkbox">
-                        <input class="toggle" type="checkbox" ng-model="gig.isDone">
-                        <input class="task-input task-name" type="text" ng-model="gig.title">
-                    </div>
-                </li>
-            </ul>
+            <h1>Measure</h1>
         </div>
     </div>
 </div>
