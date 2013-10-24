@@ -2,12 +2,17 @@
 
 Application.Directives.directive('calendar', function() {
     return {
-        restrict: 'A',
+        restrict: 'EAC',
         link: function(scope, element, attrs) {
             var elem = $(element);
 
             elem.fullCalendar({
-                weekends: false // will hide Saturdays and Sundays
+                header: {
+                    left: 'prev,next',
+                    center: 'title',
+                    right: 'today,month,agendaWeek,agendaDay'
+                },
+                weekends: true // will hide Saturdays and Sundays
             });
         }
     };

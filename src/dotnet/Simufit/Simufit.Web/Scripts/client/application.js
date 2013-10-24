@@ -17,7 +17,7 @@ Application.Directives = angular.module('application.directives', []);
 angular.module('application', ['application.filters', 'application.services', 'application.directives', 'application.constants', 'application.controllers', 'ngRoute']).
   config(['$routeProvider', function ($routeProvider) {
       $routeProvider.
-        when('/', { templateUrl: 'partials/index.html', controller: 'MainCtrl' }).
+        when('/', { templateUrl: 'partials/main.html', controller: 'MainCtrl' }).
         when('/login', { templateUrl: 'partials/login.html', controller: 'LoginCtrl' }).
         when('/charts/', { templateUrl: 'partials/details-partial.html' }).
         otherwise({ templateUrl: 'partials/error.html' });

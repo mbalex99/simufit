@@ -1,0 +1,26 @@
+﻿.task-input {
+    background-color: transparent;
+    border: transparent;
+    font-size: 13px;
+    width: 100%;
+    color: #333333;
+}
+
+.task-input:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+}
+
+.task-input .done {
+   text-decoration:line-through
+}
+
+.active .task-input {
+    color: #ffffff;
+}
+
+.checkbox {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}

@@ -1,0 +1,48 @@
+﻿<div class="panel">
+    <header class="panel-heading bg-light">
+        <ul class="nav nav-tabs pull-right">
+            <li ng-class="{active:activeTab == 'list'}">
+                <a ng-click="switchTab('list')"><i class="fa fa-list text-default"></i>&nbsp;List</a>
+            </li>
+            <li ng-class="{active:activeTab == 'picture'}">
+                <a ng-click="switchTab('picture')"><i class="fa fa-picture-o text-default"></i>&nbsp;Picture</a>
+            </li>
+            <li ng-class="{active:activeTab == 'measure'}">
+                <a ng-click="switchTab('measure')"><i class="fa fa-stethoscope text-default"></i>&nbsp;Measure</a>
+            </li>
+        </ul>
+        <span class="hidden-sm">List</span>
+    </header>
+    <div class="panel-body">
+        <div ng-show="activeTab == 'list'">
+            <ul class="list-group list-group-sp">
+                <li class="list-group-item hover active" ng-repeat="gig in gigs">
+                    <div class="checkbox">
+                        <input class="toggle" type="checkbox" ng-model="gig.isDone">
+                        <input class="task-input task-name" type="text" ng-model="gig.title">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div ng-show="activeTab == 'picture'">
+            <ul class="list-group list-group-sp">
+                <li class="list-group-item hover active" ng-repeat="gig in gigs">
+                    <div class="checkbox">
+                        <input class="toggle" type="checkbox" ng-model="gig.isDone">
+                        <input class="task-input task-name" type="text" ng-model="gig.title">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div ng-show="activeTab == 'measure'">
+            <ul class="list-group list-group-sp">
+                <li class="list-group-item hover active" ng-repeat="gig in gigs">
+                    <div class="checkbox">
+                        <input class="toggle" type="checkbox" ng-model="gig.isDone">
+                        <input class="task-input task-name" type="text" ng-model="gig.title">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -48,6 +48,7 @@ namespace Simufit.Web
                 .Include("~/Content/styles/font.css")
                 .Include("~/Content/styles/plugin.css")
                 .Include("~/Content/styles/app.css")
+                .Include("~/Content/styles/simufit.css")
                 .Include("~/Content/fullcalendar/fullcalendar.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(

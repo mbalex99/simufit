@@ -6,11 +6,11 @@ Application.Controllers.controller('SidebarCtrl', ['$scope', '$rootScope', 'face
         $scope.$apply(function() {
 
             if (response.status === 'connected') {
-                $scope.menuItems = [{ title: "Discover", href: "#/", iconClass: "icon-eye-open" }, { title: "Friends", href: "#/friends", iconClass: "icon-group" }, { title: "Settings", href: "#/settings", iconClass: "icon-cog" }];
+                $scope.menuItems = [{ title: "Discover", href: "#/", iconClass: "fa fa-list" }, { title: "Friends", href: "#/friends", iconClass: "fa fa-group" }, { title: "Settings", href: "#/settings", iconClass: "fa fa-cog" }];
                 $scope.isLoggedIn = true;
 
             } else {
-                $scope.menuItems = [{ title: "Help", href: "#/help", iconClass: "icon-question" }, { title: "Login", href: "#/login", iconClass: "icon-facebook" }];
+                $scope.menuItems = [{ title: "Help", href: "#/help", iconClass: "fa fa-question" }, { title: "Login", href: "#/login", iconClass: "fa fa-facebook" }];
                 $scope.isLoggedIn = false;
             }
 

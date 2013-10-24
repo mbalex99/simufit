@@ -202,6 +202,7 @@
     <Content Include="Content\styles\bootstrap.css" />
     <Content Include="Content\styles\font.css" />
     <Content Include="Content\styles\plugin.css" />
+    <Content Include="Content\styles\simufit.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
@@ -209,7 +210,7 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="partials\error.html" />
     <Content Include="partials\login.html" />
-    <Content Include="partials\index.html" />
+    <Content Include="partials\main.html" />
     <Content Include="partials\sidebar.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
