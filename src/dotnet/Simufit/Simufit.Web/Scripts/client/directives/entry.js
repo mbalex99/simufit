@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-Application.Directives.directive('entry', function () {
+Application.Directives.directive('entry', ['utility', function (utility) {
     return {
         restrict: 'EA',
         templateUrl: 'partials/entry.html',
@@ -18,14 +18,6 @@ Application.Directives.directive('entry', function () {
         },
         controller: ['$scope', function ($scope) {
 
-            var isNotEmptyNullOrWhiteSpace = function (myString) {
-                if (/\S/.test(myString)) {
-                    return true;
-                } else {
-                    return false;
-                }
-            };
-
             $scope.createNewTask = function () {
                 $scope.$apply(function() {
                     $scope.entry.gigs.push({
@@ -36,19 +28,24 @@ Application.Directives.directive('entry', function () {
                 
             };
 
+            $scope.onTaskInputBlur = function (index) {
+                var gig = $scope.entry.gigs[index];
+                if (!utility.isNotEmptyNullOrWhiteSpace(gig.title)) {
+                    $scope.removeTask(index);
+                }
+            };
+
             $scope.removeTask = function(index) {
-                $scope.$apply(function() {
-                    $scope.entry.gigs.splice(index, 1);
-                });
+                $scope.entry.gigs.splice(index, 1);
+                $scope.$apply();
             };
 
             $scope.enterKeyPressed = function (index) {
                 var gig = $scope.entry.gigs[index];
-                
-                if (isNotEmptyNullOrWhiteSpace(gig.title)) {
+                if (utility.isNotEmptyNullOrWhiteSpace(gig.title)) {
                     $scope.createNewTask();
                 }
             };
         }]
     };
-});
+}]);

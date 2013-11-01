@@ -23,7 +23,7 @@ Application.Controllers.controller('SidebarCtrl', ['$scope', '$rootScope', 'face
         });
     };
 
-    $scope.$on('gotClaims', function(event, user) {
+    $scope.$on('gotUser', function(event, user) {
         $scope.$apply(function() {
             $scope.avatarUrl = "https://graph.facebook.com/" + user.facebookId + "/picture?type=square";
             $scope.firstName = user.firstName;

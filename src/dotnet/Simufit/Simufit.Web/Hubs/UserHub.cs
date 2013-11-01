@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
+using System.Threading;
 using System.Web;
 using Facebook;
 using Microsoft.AspNet.SignalR;
 using Simufit.DataAccess.Services;
 using Simufit.DataAccess.Services.Contracts;
 using  Simufit.Domain.Entities;
+using Simufit.Web.Infrastructure;
 
 namespace Simufit.Web.Hubs
 {
@@ -19,23 +22,11 @@ namespace Simufit.Web.Hubs
             _userService = new UserService();
         }
 
-        public void GetClaims(string accessToken)
+        public void GetUser()
         {
-            var client = new FacebookClient(accessToken);
+            var user = Context.GetUser();
 
-            dynamic me = client.Get("me");
-
-            var user = new User()
-            {
-                FacebookId = me.id,
-                FirstName = me.first_name,
-                LastName = me.last_name,
-                Role = Role.Normal
-            };
-
-            _userService.Upsert(user);
-
-            Clients.All.gotClaims(user);
+            Clients.All.gotUser(user);
         }
     }
 }

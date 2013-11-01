@@ -14,7 +14,7 @@ Application.Filters = angular.module('application.filters', []);
 Application.Directives = angular.module('application.directives', []);
 
 
-angular.module('application', ['application.filters', 'application.services', 'application.directives', 'application.constants', 'application.controllers', 'ngRoute']).
+angular.module('application', ['application.filters', 'application.services', 'application.directives', 'application.constants', 'application.controllers', 'ngRoute', 'ui']).
   config(['$routeProvider', function ($routeProvider) {
       $routeProvider.
         when('/', { templateUrl: 'partials/main.html', controller: 'MainCtrl' }).
@@ -30,7 +30,7 @@ angular.module('application', ['application.filters', 'application.services', 'a
               // the user is logged in and has authenticated your app
               $rootScope.accessToken = response.authResponse.accessToken;
               userService.initialize().then(function (proxy) {
-                  proxy.invoke('getClaims', $rootScope.accessToken);
+                  proxy.invoke('getUser');
               });
               $location.path('/');
           } else {

@@ -15,17 +15,19 @@
     </header>
     <div class="panel-body">
         <div ng-show="activeTab == 'list'">
-            <ul class="list-group list-group-sp">
+            <ul class="list-group list-group-sp" ui:sortable ng-model="entry.gigs">
                 <div ng-repeat="gig in entry.gigs">
-                    <task gig="gig" enter-key-pressed="enterKeyPressed($index)" remove="removeGig($index)"></task>
+                    <task gig="gig" enter-key-pressed="enterKeyPressed($index)" remove="removeTask($index)" on-blur="onTaskInputBlur($index)"></task>
                 </div>
             </ul>
         </div>
         <div ng-show="activeTab == 'picture'">
-            <h1>Picture</h1>
+            <div class="thumbnail">
+                <img src="../Images/mockpic.jpg"/>    
+            </div>
         </div>
         <div ng-show="activeTab == 'measure'">
-            <h1>Measure</h1>
+            <div measurements="entry.measurements"></div>
         </div>
     </div>
 </div>

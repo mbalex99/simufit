@@ -26,7 +26,7 @@ namespace Simufit.Web.App_Start
     {
         public void Configuration(IAppBuilder app)
         {
-
+            GlobalHost.HubPipeline.AddModule(new IdentitySetterPipelineModule());
             app.MapSignalR();
         }
     }

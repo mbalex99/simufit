@@ -6,10 +6,11 @@ Application.Services.factory('userService', ['$rootScope', '$q' ,function($rootS
     var initialize = function() {
         var deferred = $q.defer();
         connection = $.hubConnection();
+        connection.qs = { 'accessToken': $rootScope. accessToken };
         var proxy = connection.createHubProxy('userHub');
 
-        proxy.on('gotClaims', function (user) {
-            $rootScope.$broadcast('gotClaims', user);
+        proxy.on('gotUser', function (user) {
+            $rootScope.$broadcast('gotUser', user);
         });
 
         connection.start().done(function() {

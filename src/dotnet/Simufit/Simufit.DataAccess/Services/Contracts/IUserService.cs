@@ -6,6 +6,7 @@ namespace Simufit.DataAccess.Services.Contracts
     public interface IUserService
     {
         IEnumerable<User> GetUsers();
+        User GetUserByFacebookId(string facebookId);
         void Upsert(User entity);
         void Create(User entity);
         void Delete(string id);

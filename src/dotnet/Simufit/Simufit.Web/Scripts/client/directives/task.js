@@ -1,11 +1,12 @@
 ﻿'use strict';
 
-Application.Directives.directive('task', function () {
+Application.Directives.directive('task', ['utility', function (utility) {
     return {
         restrict: 'EA',
         scope: {
             onBlur: '&',
             enterKeyPressed: '&',
+            remove: '&',
             gig: "="
         },
         replace: 'true',
@@ -17,9 +18,8 @@ Application.Directives.directive('task', function () {
             var textBox = elem.find('input[type="text"]');
 
             textBox
-                .blur(function (event) {
-                    var val = elem.val();
-                    scope.onBlur({ message: val });
+                .blur(function () {
+                    scope.onBlur();
                     elem.removeClass('active');
                 })
                 .focus(function(event) {
@@ -30,6 +30,8 @@ Application.Directives.directive('task', function () {
                         scope.enterKeyPressed();
                     }
                 });
+            
+
         }
     };
-});
+}]);
