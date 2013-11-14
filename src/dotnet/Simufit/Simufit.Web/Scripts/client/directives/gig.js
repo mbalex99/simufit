@@ -34,8 +34,6 @@ Application.Directives.directive('gig', function () {
                         scope.enterKeyPressed();
                     }
                 });
-
-
             scope.$on('focusGig', function(e, index) {
                 if (scope.index == index) {
                     textBox.focus();

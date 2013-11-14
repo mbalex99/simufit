@@ -7,18 +7,18 @@ Application.Directives.directive('entry', function () {
         scope: {
             entry: "="
         },
-        link: function (scope, element, attrs) {
+        link: function(scope, element, attrs) {
 
             scope.activeTab = scope.activeTab || 'list';
 
-            scope.switchTab = function (tabName) {
+            scope.switchTab = function(tabName) {
                 scope.activeTab = tabName;
             };
 
         },
-        controller: ['$scope', function ($scope) {
+        controller: ['$scope', function($scope) {
 
-            var isNotEmptyNullOrWhiteSpace = function (myString) {
+            var isNotEmptyNullOrWhiteSpace = function(myString) {
                 if (/\S/.test(myString)) {
                     return true;
                 } else {
@@ -26,7 +26,8 @@ Application.Directives.directive('entry', function () {
                 }
             };
 
-            $scope.createNewGig = function (index) {
+            $scope.createNewGig = function(index) {
+
                 $scope.$apply(function() {
                     $scope.entry.gigs.splice(index + 1, 0, { title: "", isDone: false });
                 });
@@ -36,20 +37,16 @@ Application.Directives.directive('entry', function () {
             };
 
             $scope.removeGig = function(index) {
-                //$scope.$apply(function() {
-                    $scope.entry.gigs.splice(index, 1);
-                    if ($scope.entry.gigs.length > 0) {
-                        $scope.$broadcast('focusGig', $scope.entry.gigs.length - 1);
-                    }
-
-                //});
+                $scope.entry.gigs.splice(index, 1);
+                if ($scope.entry.gigs.length > 0) {
+                    $scope.$broadcast('focusGig', $scope.entry.gigs.length - 1);
+                }
             };
 
-            $scope.enterKeyPressed = function (index) {
+
+            $scope.enterKeyPressed = function(index) {
                 var gig = $scope.entry.gigs[index];
 
-
-                
                 if (isNotEmptyNullOrWhiteSpace(gig.title)) {
                     $scope.createNewGig(index);
                 }

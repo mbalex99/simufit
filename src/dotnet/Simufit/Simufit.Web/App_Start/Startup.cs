@@ -10,23 +10,21 @@ using Microsoft.AspNet.SignalR;
 using Microsoft.AspNet.SignalR.Hubs;
 using Microsoft.Owin;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-using Owin;
-using SimpleInjector;
-using Simufit.DataAccess.Services;
-using Simufit.DataAccess.Services.Contracts;
-using Simufit.DataAccess.Services.Implementations;
-using Simufit.Web.Infrastructure;
 
-[assembly: OwinStartup(typeof(Simufit.Web.App_Start.Startup))]
-namespace Simufit.Web.App_Start
+using Microsoft.Owin;
+using Owin;
+using Simufit.Web;
+
+
+[assembly: OwinStartup(typeof(Startup))]
+namespace Simufit.Web
 {
     
     public class Startup
     {
         public void Configuration(IAppBuilder app)
         {
-
+            // Any connection or hub wire up and configuration should go here
             app.MapSignalR();
         }
     }

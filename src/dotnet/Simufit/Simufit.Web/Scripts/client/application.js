@@ -30,7 +30,7 @@ angular.module('application', ['application.filters', 'application.services', 'a
               // the user is logged in and has authenticated your app
               $rootScope.accessToken = response.authResponse.accessToken;
               userService.initialize().then(function (proxy) {
-                  proxy.invoke('getClaims', $rootScope.accessToken);
+                  proxy.invoke('getUser');
               });
               $location.path('/');
           } else {

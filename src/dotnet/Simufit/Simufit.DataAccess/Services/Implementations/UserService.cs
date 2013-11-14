@@ -20,6 +20,12 @@ namespace Simufit.DataAccess.Services
             return users;
         }
 
+        public User GetUserByFacebookId(string facebookId)
+        {
+            var query = Query.EQ("FacebookId", facebookId);
+            return this.MongoConnectionHandler.MongoCollection.FindOne(query);
+        }
+
         public void Upsert(User entity)
         {
             var userCollection = MongoConnectionHandler.MongoCollection;
