@@ -26,17 +26,14 @@ Application.Directives.directive('entry', function () {
                 }
             };
 
-            $scope.createNewTask = function () {
+            $scope.createNewGig = function (index) {
                 $scope.$apply(function() {
-                    $scope.entry.gigs.push({
-                        title: "",
-                        isDone: false
-                    });
+                    $scope.entry.gigs.splice(index + 1, 0, { title: "", isDone: false });
                 });
                 
             };
 
-            $scope.removeTask = function(index) {
+            $scope.removeGig = function(index) {
                 $scope.$apply(function() {
                     $scope.entry.gigs.splice(index, 1);
                 });
@@ -44,9 +41,11 @@ Application.Directives.directive('entry', function () {
 
             $scope.enterKeyPressed = function (index) {
                 var gig = $scope.entry.gigs[index];
+
+
                 
                 if (isNotEmptyNullOrWhiteSpace(gig.title)) {
-                    $scope.createNewTask();
+                    $scope.createNewGig(index);
                 }
             };
         }]

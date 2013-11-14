@@ -17,7 +17,7 @@
         <div ng-show="activeTab == 'list'">
             <ul class="list-group list-group-sp">
                 <div ng-repeat="gig in entry.gigs">
-                    <task gig="gig" enter-key-pressed="enterKeyPressed($index)" remove="removeGig($index)"></task>
+                    <gig ng-model="gig" enter-key-pressed="enterKeyPressed($index)" remove="removeGig($index)" index="{{$index}}"></gig>
                 </div>
             </ul>
         </div>
@@ -29,3 +29,7 @@
         </div>
     </div>
 </div>
+
+<ul ng-repeat="gig in entry.gigs">
+    <li>{{gig.title}}</li>
+</ul>
