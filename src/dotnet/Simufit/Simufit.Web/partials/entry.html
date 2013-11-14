@@ -15,7 +15,7 @@
     </header>
     <div class="panel-body">
         <div ng-show="activeTab == 'list'">
-            <ul class="list-group list-group-sp">
+            <ul class="list-group list-group-sp" ui-sortable ng-model="entry.gigs">
                 <div ng-repeat="gig in entry.gigs">
                     <gig ng-model="gig" enter-key-pressed="enterKeyPressed($index)" remove="removeGig($index)" index="{{$index}}"></gig>
                 </div>

@@ -21,11 +21,9 @@ Application.Directives.directive('gig', function () {
             textBox
                 .blur(function (event) {
                     var val = textBox.val();
-                    
                     if (!val) {
                         scope.remove(scope.index);
                     }
-
                     elem.removeClass('active');
                 })
                 .focus(function(event) {
@@ -37,6 +35,12 @@ Application.Directives.directive('gig', function () {
                     }
                 });
 
+
+            scope.$on('focusGig', function(e, index) {
+                if (scope.index == index) {
+                    textBox.focus();
+                }
+            });
         }
     };
 });

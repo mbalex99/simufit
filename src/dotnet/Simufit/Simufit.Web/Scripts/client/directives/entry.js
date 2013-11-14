@@ -30,13 +30,19 @@ Application.Directives.directive('entry', function () {
                 $scope.$apply(function() {
                     $scope.entry.gigs.splice(index + 1, 0, { title: "", isDone: false });
                 });
-                
+
+                $scope.$broadcast('focusGig', index + 1);
+
             };
 
             $scope.removeGig = function(index) {
-                $scope.$apply(function() {
+                //$scope.$apply(function() {
                     $scope.entry.gigs.splice(index, 1);
-                });
+                    if ($scope.entry.gigs.length > 0) {
+                        $scope.$broadcast('focusGig', $scope.entry.gigs.length - 1);
+                    }
+
+                //});
             };
 
             $scope.enterKeyPressed = function (index) {

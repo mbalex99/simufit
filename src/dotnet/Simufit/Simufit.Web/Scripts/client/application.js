@@ -14,7 +14,7 @@ Application.Filters = angular.module('application.filters', []);
 Application.Directives = angular.module('application.directives', []);
 
 
-angular.module('application', ['application.filters', 'application.services', 'application.directives', 'application.constants', 'application.controllers', 'ngRoute']).
+angular.module('application', ['application.filters', 'application.services', 'application.directives', 'application.constants', 'application.controllers', 'ngRoute', 'ui.sortable']).
   config(['$routeProvider', function ($routeProvider) {
       $routeProvider.
         when('/', { templateUrl: 'partials/main.html', controller: 'MainCtrl' }).
